@@ -70,7 +70,7 @@ export interface Education {
 export const contactInfo: ContactInfo = {
   name: "Mohammed Riyazuddin",
   title: "Technical Support Engineer",
-  email: "contact@riyaz.blog",
+  email: "riyaz15@gmail.com",
   phone: "+91 863-922-7538",
   location: "Hyderabad, India",
   linkedin: "https://www.linkedin.com/in/mriyazuddin1/",
