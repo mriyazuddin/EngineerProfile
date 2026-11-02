@@ -39,9 +39,6 @@ export const projects = [
   { title: "Nature Life Water", tag: "Client project · WooCommerce", img: "/projects/nature-life-water.webp", url: "https://naturelifewater.com", summary: "Store setup for a Sierra Leone client: tax, shipping, custom payment gateways and WhatsApp chat.", text: "Store for a Sierra Leone client, including products, tax, shipping logic, custom payment gateways and WhatsApp chat." },
   { title: "Quality Core Constructions", tag: "Demo · WordPress", img: "/projects/quality-core-constructions.webp", url: "https://qualitycoreconstructions.com", summary: "", text: "Corporate demo with a lead-generation form, project progress tracking and a responsive layout." },
   { title: "Bridal Elegance", tag: "Demo · WooCommerce", img: "/projects/bridal-elegance.webp", url: "https://tmrbusiness2.wpcomstaging.com/", summary: "", text: "Image-led bridal store demo that handles complex product variations and a secure checkout flow." },
-  { title: "Nature Life Water", tag: "Client project · WooCommerce", img: "/projects/nature-life-water.png", url: "https://naturelifewater.com", summary: "Store setup for a Sierra Leone client: tax, shipping, custom payment gateways and WhatsApp chat.", text: "Store for a Sierra Leone client, including products, tax, shipping logic, custom payment gateways and WhatsApp chat." },
-  { title: "Quality Core Constructions", tag: "Demo · WordPress", img: "/projects/quality-core-constructions.png", url: "https://qualitycoreconstructions.com", summary: "", text: "Corporate demo with a lead-generation form, project progress tracking and a responsive layout." },
-  { title: "Bridal Elegance", tag: "Demo · WooCommerce", img: "/projects/bridal-elegance.png", url: "https://tmrbusiness2.wpcomstaging.com/", summary: "", text: "Image-led bridal store demo that handles complex product variations and a secure checkout flow." },
 ];
 
 export const series = {
