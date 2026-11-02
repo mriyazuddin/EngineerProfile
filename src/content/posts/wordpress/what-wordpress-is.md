@@ -7,7 +7,7 @@ description: "AI can build a website, so why learn WordPress? Because a website 
 question: "Has AI made you more or less interested in learning WordPress?"
 ---
 
-Can AI build a website now? Yes it can, which raises a fair question for day one of this series: why learn WordPress at all? After spending more than 7 years in WordPress ecosystem, my answer is that a website is more than what gets generated.
+Can AI build a website now? Yes it can, which raises a fair question for day one of this series: why learn WordPress at all? After spending almost 7 years in WordPress ecosystem, my answer is that a website is more than what gets generated.
 
 WordPress is a content management system, or CMS: software for creating, organising and publishing website content without writing code.
 
