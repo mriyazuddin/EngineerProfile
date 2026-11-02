@@ -1,0 +1,67 @@
+---
+import { render } from "astro:content";
+import Base from "../../../layouts/Base.astro";
+import BlogIndex from "../../../components/BlogIndex.astro";
+import { LINKEDIN, series, type SeriesKey } from "../../../data/site";
+import { PAGE_SIZE, allPosts, isoDate, longDate, postOgKey, postPath, postSlug, type Post } from "../../../lib/posts";
+
+// One route serves each series' list pages (/blog/sql, /blog/sql/page/2)
+// and its individual posts (/blog/sql/<slug>).
+export async function getStaticPaths() {
+  const paths = [];
+  for (const key of Object.keys(series) as SeriesKey[]) {
+    const posts = await allPosts(key);
+    const lastPage = Math.max(1, Math.ceil(posts.length / PAGE_SIZE));
+    for (let i = 0; i < lastPage; i++) {
+      paths.push({
+        params: { series: key, rest: i === 0 ? undefined : `page/${i + 1}` },
+        props: { kind: "list", filter: key, posts: posts.slice(i * PAGE_SIZE, (i + 1) * PAGE_SIZE), page: i + 1, lastPage },
+      });
+    }
+    const byDay = [...posts].sort((a, b) => a.data.day - b.data.day);
+    byDay.forEach((post, i) => {
+      paths.push({
+        params: { series: key, rest: postSlug(post) },
+        props: { kind: "post", post, prev: byDay[i - 1], next: byDay[i + 1] },
+      });
+    });
+  }
+  return paths;
+}
+
+const props = Astro.props as any;
+const post: Post | undefined = props.kind === "post" ? props.post : undefined;
+const prev: Post | undefined = props.prev;
+const next: Post | undefined = props.next;
+const Content = post ? (await render(post)).Content : null;
+---
+{post && Content ? (
+  <Base
+    title={`${post.data.title} | ${series[post.data.series].name}`}
+    description={post.data.description}
+    path={postPath(post)}
+    ogKey={postOgKey(post)}
+    active="blog"
+    type="article"
+    published={isoDate(post.data.date)}
+  >
+    <article class="post">
+      <div class="post-meta">{series[post.data.series].name} · Day {post.data.day} of 60 · <time datetime={isoDate(post.data.date)}>{longDate(post.data.date)}</time></div>
+      <h1>{post.data.title}</h1>
+      <div class="post-body"><Content /></div>
+      {post.data.tryIt && <aside class="try"><h2>Try it</h2><p>{post.data.tryIt}</p></aside>}
+      {post.data.question && <p class="question">{post.data.question}</p>}
+      {post.data.linkedinUrl
+        ? <a class="post-link" href={post.data.linkedinUrl}>Join the conversation on LinkedIn</a>
+        : <a class="post-link" href={LINKEDIN}>Follow the series on LinkedIn</a>}
+      {(prev || next) && (
+        <nav class="series-nav" aria-label="Series">
+          {prev ? <a href={postPath(prev)}>Previous: {prev.data.title}</a> : <span />}
+          {next && <a href={postPath(next)}>Next: {next.data.title}</a>}
+        </nav>
+      )}
+    </article>
+  </Base>
+) : (
+  <BlogIndex posts={props.posts} filter={props.filter} page={props.page} lastPage={props.lastPage} />
+)}

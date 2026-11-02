@@ -1,0 +1,42 @@
+---
+import Base from "../layouts/Base.astro";
+import SeriesRows from "./SeriesRows.astro";
+import { LINKEDIN, series, type SeriesKey } from "../data/site";
+import { ogPath, type Post } from "../lib/posts";
+
+interface Props { posts: Post[]; filter?: SeriesKey; page: number; lastPage: number; }
+const { posts, filter, page, lastPage } = Astro.props;
+const base = filter ? series[filter].path : "/blog";
+const pageUrl = (n: number) => (n === 1 ? base : `${base}/page/${n}`);
+const label = filter ? series[filter].name : "Blog";
+const suffix = page > 1 ? ` (page ${page})` : "";
+const title = `${label}${suffix} | Mohammed Riyazuddin`;
+const description = filter
+  ? `${series[filter].name}: weekday lessons for complete beginners by Mohammed Riyazuddin.`
+  : "Weekday lessons in WordPress and SQL for complete beginners by Mohammed Riyazuddin.";
+const tabs = [
+  { label: "All", href: "/blog", on: !filter },
+  { label: "WordPress", href: series.wordpress.path, on: filter === "wordpress" },
+  { label: "SQL", href: series.sql.path, on: filter === "sql" },
+];
+---
+<Base {title} {description} path={pageUrl(page)} ogKey={filter ? `blog-${filter}` : "blog"} active="blog">
+  <main class="wrap page">
+    <h1 class="page-title">Blog</h1>
+    <p class="blog-sub">Weekday lessons in WordPress and SQL for complete beginners.</p>
+    <nav class="tabs" aria-label="Filter by series">
+      {tabs.map((t) => <a href={t.href} aria-current={t.on ? "page" : undefined}>{t.label}</a>)}
+    </nav>
+    <div class="post-list">
+      {posts.length ? <SeriesRows {posts} /> : (
+        <p class="empty">Lessons from this series will appear here. Until then, <a href={LINKEDIN}>follow along on LinkedIn</a>.</p>
+      )}
+    </div>
+    {lastPage > 1 && (
+      <nav class="pager" aria-label="Pages">
+        {page > 1 ? <a href={pageUrl(page - 1)}>Newer posts</a> : <span>Page 1</span>}
+        {page < lastPage ? <a href={pageUrl(page + 1)}>Older posts</a> : <span>Page {page}</span>}
+      </nav>
+    )}
+  </main>
+</Base>

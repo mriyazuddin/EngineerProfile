@@ -1,0 +1,62 @@
+---
+import "@fontsource/ibm-plex-sans/400.css";
+import "@fontsource/ibm-plex-sans/500.css";
+import "@fontsource/ibm-plex-sans/600.css";
+import "@fontsource/ibm-plex-sans/700.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/500.css";
+import "@fontsource/ibm-plex-mono/600.css";
+import "../styles/site.css";
+import { NAME, SITE_URL } from "../data/site";
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  ogKey: string;
+  active?: "about" | "work" | "blog" | "contact";
+  dark?: boolean;
+  type?: "website" | "article" | "profile";
+  published?: string;
+  noindex?: boolean;
+}
+const { title, description, path, ogKey, active, dark = false, type = "website", published, noindex = false } = Astro.props;
+const url = SITE_URL + (path === "/" ? "/" : path);
+const image = `${SITE_URL}/og/${ogKey}.png`;
+const links = ["about", "work", "blog", "contact"] as const;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={NAME} />
+    {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={url} />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:site_name" content="riyaz.blog" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
+    {published && <meta property="article:published_time" content={published} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+  </head>
+  <body class={dark ? "dark" : ""}>
+    <nav class="site-nav" aria-label="Main">
+      <a class="brand" href="/">riyaz.blog</a>
+      <div class="nav-links">
+        {links.map((l) => <a href={`/${l}`} aria-current={active === l ? "page" : undefined}>{l}</a>)}
+      </div>
+    </nav>
+    <slot />
+  </body>
+</html>

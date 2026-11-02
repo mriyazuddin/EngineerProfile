@@ -1,105 +1,45 @@
-# Mohammed Riyazuddin - Portfolio Website
+# riyaz.blog
 
-A modern, responsive portfolio website showcasing Mohammed's 5+ years of experience in Customer Success and Technical Support with SaaS platforms.
+Portfolio and blog of Mohammed Riyazuddin, built with [Astro](https://astro.build) as a fully static site. Every page is pre-rendered to its own HTML file with its own title, description and link-preview image.
 
-## 🚀 Live Demo
+## Develop
 
-Visit the live website: [Your Vercel URL will go here]
-
-## 📋 Features
-
-- **Professional Design**: Clean, modern interface with dark/light theme support
-- **Responsive Layout**: Optimized for all devices and screen sizes
-- **Interactive Sections**:
-  - Hero section with professional introduction
-  - About section with expertise areas
-  - Experience timeline with detailed work history
-  - Skills showcase with technical stack
-  - Education background
-  - Key achievements and metrics
-  - Working contact form with mailto functionality
-- **Performance Optimized**: Built with Vite for fast loading
-- **Accessibility**: Screen reader friendly with proper ARIA labels
-
-## 🛠️ Tech Stack
-
-- **Frontend**: React 18, TypeScript
-- **Styling**: Tailwind CSS, shadcn/ui components
-- **Build Tool**: Vite
-- **Icons**: Lucide React
-- **Deployment**: Vercel
-
-## 🏃‍♂️ Quick Start
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/portfolio-website.git
-cd portfolio-website
-```
-
-2. Install dependencies:
+Requires Node 22.12 or newer.
 
 ```bash
 npm install
+npm run dev      # local server
+npm run build    # writes the site to dist/
+npm run preview  # serves dist/
 ```
 
-3. Start development server:
+## Content
 
-```bash
-npm run dev
-```
+- Profile, experience and projects: `src/data/site.ts`
+- Resume: `public/resume.pdf`
+- Project screenshots: `public/projects/`
 
-4. Open [http://localhost:5000](http://localhost:5000) in your browser
+## Add a blog post
 
-### Build for Production
+Add one Markdown file at `src/content/posts/<sql|wordpress>/<slug>.md`. The file name becomes the URL, `/blog/<series>/<slug>`.
 
-```bash
-npm run build
-```
-
-The built files will be in the `client/dist` directory.
-
-## 📁 Project Structure
-
-```
-portfolio-website/
-├── client/                 # Frontend React application
-│   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── pages/          # Page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── lib/            # Utilities and configurations
-│   │   └── data/           # Static data and content
-│   └── dist/               # Built files (after npm run build)
-├── shared/                 # Shared TypeScript types
-├── server/                 # Development server (not used in production)
-└── vercel.json            # Vercel deployment configuration
-```
-
-## 📞 Contact
-
-**Mohammed Riyazuddin**
-
-- Email: contact@riyaz.blog
-- Phone: +91 863-922-7538
-- Location: Hyderabad, India
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-This is a personal portfolio website. If you'd like to suggest improvements or report issues, please feel free to open an issue or contact me directly.
-
+```markdown
+---
+title: "What SQL is and why it's worth learning"
+series: sql
+day: 1
+date: 2026-11-02
+description: "One sentence for search results and link previews."
+tryIt: "The post's Try it step, without the 'Try it:' label."
+question: "The post's closing question."
+linkedinUrl: "https://www.linkedin.com/feed/update/..."  # optional
 ---
 
-Built with ❤️ using React, TypeScript, and Tailwind CSS
+The post body. Leave out the "Day N of 60" line and the hashtags.
+```
+
+Lists, pagination, previous/next links, the sitemap and the preview image update automatically.
+
+## Deploy
+
+Vercel builds the site using `vercel.json`. `cleanUrls` serves each generated HTML file at its extensionless address, so direct links such as `/about` work.

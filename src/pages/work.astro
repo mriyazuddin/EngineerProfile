@@ -1,0 +1,28 @@
+---
+import Base from "../layouts/Base.astro";
+import { projects } from "../data/site";
+---
+<Base
+  title="Work | Mohammed Riyazuddin"
+  description="WordPress and WooCommerce projects by Mohammed Riyazuddin, including a live store with an AI support assistant and a client store for Sierra Leone."
+  path="/work"
+  ogKey="work"
+  active="work"
+>
+  <main class="wrap page">
+    <h1 class="page-title">Work</h1>
+    <div class="work-grid">
+      {projects.map((p) => (
+        <article class="project">
+          <img src={p.img} alt={`${p.title} screenshot`} loading="lazy" />
+          <div class="project-body">
+            <div class="tag">{p.tag}</div>
+            <h2>{p.title}</h2>
+            <p>{p.text}</p>
+            <a href={p.url} aria-label={`Visit the ${p.title} site`}>Visit site</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </main>
+</Base>

@@ -1,0 +1,12 @@
+---
+import { series } from "../data/site";
+import { isoDate, postPath, shortDate, type Post } from "../lib/posts";
+const { posts } = Astro.props as { posts: Post[] };
+---
+{posts.map((p) => (
+  <a class="post-row" href={postPath(p)}>
+    <span class="label">{series[p.data.series].short} · Day {p.data.day}</span>
+    <span class="name">{p.data.title}</span>
+    <time datetime={isoDate(p.data.date)}>{shortDate(p.data.date)}</time>
+  </a>
+))}

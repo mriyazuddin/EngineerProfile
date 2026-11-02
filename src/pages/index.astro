@@ -1,0 +1,83 @@
+---
+import Base from "../layouts/Base.astro";
+import { LINKEDIN, LOCATION, NAME, RESUME, debugAreas, projects, series, trackRecord } from "../data/site";
+import { allPosts, postPath } from "../lib/posts";
+
+const posts = await allPosts();
+const selected = projects.slice(0, 2);
+const seriesCards = (["sql", "wordpress"] as const).map((key) => {
+  const latest = posts.find((p) => p.data.series === key);
+  return {
+    name: series[key].name,
+    text: latest ? latest.data.title : "Follow along on LinkedIn",
+    href: latest ? postPath(latest) : LINKEDIN,
+  };
+});
+---
+<Base
+  title="Mohammed Riyazuddin | Support Engineer and Customer Success Engineer"
+  description="Technical Support Engineer in Hyderabad, India, open to Support Engineer and Customer Success Engineer roles. WordPress, WooCommerce, DNS, payments and SQL."
+  path="/"
+  ogKey="home"
+  type="profile"
+>
+  <header class="wrap hero">
+    <div class="hero-copy">
+      <p class="status">status: open to Support Engineer and Customer Success Engineer roles</p>
+      <h1>I find out why it broke, fix it, and write it down.</h1>
+      <p class="lead">I'm Mohammed Riyazuddin, a Technical Support Engineer in Hyderabad, India. I work across WordPress, WooCommerce, DNS, payments and SQL.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href={RESUME}>Download resume</a>
+        <a class="btn btn-outline" href="/work">See my work</a>
+      </div>
+    </div>
+    <div class="console">
+      <div class="console-title">track_record.sql</div>
+      <div class="console-body">
+        <div><span class="kw">SELECT</span> metric, result</div>
+        <div><span class="kw">FROM</span> automattic_support;</div>
+        <table>
+          <tbody>
+            {trackRecord.map(([metric, result]) => <tr><td>{metric}</td><td>{result}</td></tr>)}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </header>
+
+  <section class="band">
+    <div class="wrap section">
+      <h2>What I debug</h2>
+      <div class="grid-4">
+        {debugAreas.map((a) => <div class="area"><h3>{a.title}</h3><p>{a.text}</p></div>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="section-head"><h2>Selected work</h2><a href="/work">All projects</a></div>
+    <div class="cards">
+      {selected.map((p) => (
+        <a class="card" href="/work">
+          <img src={p.img} alt={`${p.title} storefront`} loading="lazy" />
+          <div class="card-body"><h3>{p.title}</h3><p>{p.summary}</p></div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="learn">
+    <div class="wrap section">
+      <h2>Learn with me, one post a weekday</h2>
+      <p class="sub">Two 60-post series for complete beginners.</p>
+      <div class="series-grid">
+        {seriesCards.map((c) => <a class="series-card" href={c.href}><div>{c.name}</div><div>{c.text}</div></a>)}
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap site-footer">
+    <span>{NAME} · {LOCATION}</span>
+    <a href={LINKEDIN}>LinkedIn</a>
+  </footer>
+</Base>
