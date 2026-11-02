@@ -10,13 +10,12 @@ import { allPosts, postOgKey } from "../../lib/posts";
 const fontDir = join(process.cwd(), "src/assets/og-fonts");
 // resvg reads TTF files only, so the published WOFF2 files are decompressed at build time.
 const tmp = mkdtempSync(join(tmpdir(), "og-fonts-"));
-const fontFiles = await Promise.all(
-  ["IBMPlexSans-Bold", "IBMPlexMono-Medium"].map(async (name) => {
-    const file = join(tmp, `${name}.ttf`);
-    writeFileSync(file, await decompress(readFileSync(join(fontDir, `${name}.woff2`))));
-    return file;
-  }),
-);
+const fontFiles: string[] = [];
+for (const name of ["IBMPlexSans-Bold", "IBMPlexMono-Medium"]) {
+  const file = join(tmp, `${name}.ttf`);
+  writeFileSync(file, await decompress(readFileSync(join(fontDir, `${name}.woff2`))));
+  fontFiles.push(file);
+}
 
 const esc = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
