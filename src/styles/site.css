@@ -138,3 +138,4 @@ body.dark .contact-mail:hover { background: var(--white); color: var(--night); }
 
 /* Keep text links in navigation at a 44px touch target. */
 .brand, .nav-links a, .section-head a, .site-footer a, .project a, .series-nav a, .post-link, .contact-links a, .pager a { display: inline-flex; align-items: center; min-height: 44px; padding-top: 0; padding-bottom: 0; }
+.post-body .try p { margin-bottom: 0; }

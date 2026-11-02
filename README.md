@@ -36,6 +36,9 @@ linkedinUrl: "https://www.linkedin.com/feed/update/..."  # optional
 ---
 
 The post body. Leave out the "Day N of 60" line and the hashtags.
+
+If text follows the Try it step, leave out `tryIt` and put the step in the body so the order stays the same:
+`<aside class="try"><h2>Try it</h2><p>...</p></aside>`
 ```
 
 Lists, pagination, previous/next links, the sitemap and the preview image update automatically.

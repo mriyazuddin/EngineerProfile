@@ -1,4 +1,4 @@
-export const SITE_URL = "https://www.riyaz.blog";
+export const SITE_URL = "https://riyaz.blog";
 export const NAME = "Mohammed Riyazuddin";
 export const EMAIL = "riyaz15@gmail.com";
 export const LINKEDIN = "https://www.linkedin.com/in/mriyazuddin1/";

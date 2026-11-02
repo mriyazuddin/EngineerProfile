@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.riyaz.blog/sitemap.xml
+Sitemap: https://riyaz.blog/sitemap.xml
