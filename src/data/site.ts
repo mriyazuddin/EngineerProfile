@@ -23,7 +23,7 @@ export const debugAreas = [
 export const experience = [
   { when: "Dec 2025 to present", role: "WordPress Developer, Freelance", text: "Build WordPress and WooCommerce sites. Resolve issues with themes, plugins, hosting, DNS, email and payment gateways." },
   { when: "Jun 2019 to Apr 2025", role: "Happiness Engineer, Automattic", text: "Supported WordPress.com and WooCommerce by email and live chat, using SQL to troubleshoot. Handled 500+ tickets a month at 90%+ CSAT and revamped over 100 documentation assets." },
-  { when: "Sep 2016 to Mar 2018", role: "Senior Manager, Teradata", text: "Led L1 and L2 support engineers for Teradata products." },
+  { when: "Sep 2016 to Apr 2018", role: "Senior Manager, Teradata", text: "Led L1 and L2 support engineers for Teradata products." },
   { when: "Aug 2005 to Sep 2016", role: "Manager, Service Desk, Deloitte", text: "Started as a front-line IT support analyst and went on to lead a team." },
 ];
 
