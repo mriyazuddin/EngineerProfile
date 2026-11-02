@@ -6,6 +6,7 @@ date: 2026-11-02
 description: "SQL is the language you use to ask a database questions. Here's what a complete query looks like, read almost like English."
 tryIt: "Think of one app you used today. Write down one question its database could answer, like \"Which of my orders haven't shipped yet?\""
 question: "What's one question about your work data you'd love to answer yourself?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7523039547295735808/"
 ---
 
 Every time a shopping site shows your order history, a database is answering a question. SQL is the language you use to ask those questions yourself.
