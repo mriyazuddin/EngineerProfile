@@ -23,6 +23,7 @@ export const debugAreas = [
 export const experience = [
   { when: "Dec 2025 to present", role: "Technical Support Engineer, Freelance", text: "Build WordPress and WooCommerce sites. Resolve issues with themes, plugins, hosting, DNS, email and payment gateways." },
   { when: "Jun 2019 to Apr 2025", role: "Happiness Engineer, Automattic", text: "Supported WordPress.com and WooCommerce by email and live chat, using SQL to troubleshoot. Handled 500+ tickets a month at 90%+ CSAT and revamped over 100 documentation assets." },
+  { when: "May 2018 to Apr 2019", role: "IT Support, Freelance", text: "Provided on-site IT support to small businesses, resolving software, hardware, printer, operating system, network, Office 365, email setup and data backup issues." },
   { when: "Sep 2016 to Apr 2018", role: "Senior Manager, Teradata", text: "Led L1 and L2 support engineers for Teradata products." },
   { when: "Aug 2005 to Sep 2016", role: "Manager, Service Desk, Deloitte", text: "Started as a front-line IT support analyst and went on to lead a team." },
 ];
