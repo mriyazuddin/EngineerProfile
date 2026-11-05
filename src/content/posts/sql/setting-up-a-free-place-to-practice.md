@@ -11,7 +11,7 @@ linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7524100258386112
 
 You can't learn SQL by reading alone. The good news is that you can run your first query in a browser in about two minutes, with nothing to install.
 
-Open mycompiler.io/online-sql-editor. It's free and doesn't need an account unless you want to save your work. It uses SQLite, a small database that follows most of the SQL we'll cover.
+Open [Online SQL Editor](https://www.mycompiler.io/online-sql-editor), and click the "Start Coding in SQL" button. It's free and doesn't need an account unless you want to save your work. It uses SQLite, a small database that follows most of the SQL we'll cover.
 
 Delete anything in the editor, paste these lines and press Run:
 
