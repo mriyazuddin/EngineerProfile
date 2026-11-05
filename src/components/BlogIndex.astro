@@ -12,8 +12,8 @@ const label = filter ? series[filter].name : "Blog";
 const suffix = page > 1 ? ` (page ${page})` : "";
 const title = `${label}${suffix} | Mohammed Riyazuddin`;
 const description = filter
-  ? `${series[filter].name}: weekday lessons for complete beginners by Mohammed Riyazuddin.`
-  : "Weekday lessons in WordPress and SQL for complete beginners by Mohammed Riyazuddin.";
+  ? `${series[filter].name}: daily lessons for complete beginners by Mohammed Riyazuddin.`
+  : "Daily lessons in WordPress and SQL for complete beginners by Mohammed Riyazuddin.";
 const tabs = [
   { label: "All", href: "/blog", on: !filter },
   { label: "WordPress", href: series.wordpress.path, on: filter === "wordpress" },
@@ -23,7 +23,7 @@ const tabs = [
 <Base {title} {description} path={pageUrl(page)} ogKey={filter ? `blog-${filter}` : "blog"} active="blog">
   <main class="wrap page">
     <h1 class="page-title">Blog</h1>
-    <p class="blog-sub">Weekday lessons in WordPress and SQL for complete beginners.</p>
+    <p class="blog-sub">Daily lessons in WordPress and SQL for complete beginners.</p>
     <nav class="tabs" aria-label="Filter by series">
       {tabs.map((t) => <a href={t.href} aria-current={t.on ? "page" : undefined}>{t.label}</a>)}
     </nav>

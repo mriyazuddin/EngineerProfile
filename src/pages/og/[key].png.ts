@@ -56,7 +56,7 @@ export async function getStaticPaths() {
     ["home", "status: open to work", "I find out why it broke, fix it, and write it down."],
     ["about", "about", "Support Engineer and Customer Success Engineer"],
     ["work", "work", "WordPress and WooCommerce projects"],
-    ["blog", "blog", "Weekday lessons in WordPress and SQL"],
+    ["blog", "blog", "Daily lessons in WordPress and SQL"],
     ["blog-sql", "blog", series.sql.name],
     ["blog-wordpress", "blog", series.wordpress.name],
     ["contact", "contact", "Open a ticket with me."],

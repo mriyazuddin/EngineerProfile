@@ -68,7 +68,7 @@ const seriesCards = (["sql", "wordpress"] as const).map((key) => {
 
   <section class="learn">
     <div class="wrap section">
-      <h2>Learn with me, one post a weekday</h2>
+      <h2>Learn with me, one post a day</h2>
       <p class="sub">Two 60-post series for complete beginners.</p>
       <div class="series-grid">
         {seriesCards.map((c) => <a class="series-card" href={c.href}><div>{c.name}</div><div>{c.text}</div></a>)}

@@ -13,7 +13,7 @@ Every time a shopping site shows your order history, a database is answering a q
 
 SQL stands for Structured Query Language. You describe the result you want, and the database works out how to get it.
 
-Starting today, I'm teaching it from the basics, one short post each weekday. No coding background needed.
+Starting today, I'm teaching it from the basics, one short post each day. No coding background needed.
 
 Here's what a question looks like in SQL:
 
