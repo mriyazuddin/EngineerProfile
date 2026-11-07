@@ -6,6 +6,7 @@ date: 2026-11-07
 description: "List only the columns you need in a SELECT, and learn the common data types that decide what each column can hold."
 tryIt: "For a table you'd want at work, list four columns and choose a type for each."
 question: "Which column was hardest to choose a type for?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7524818867806900225/"
 ---
 
 SELECT * is handy for a first look, but real tables can have dozens of columns. Most of the time, you only want a few.
