@@ -7,7 +7,6 @@ import "@fontsource/ibm-plex-mono/400.css";
 import "@fontsource/ibm-plex-mono/500.css";
 import "@fontsource/ibm-plex-mono/600.css";
 import "../styles/site.css";
-import Analytics from "@vercel/analytics/astro";
 import { NAME, SITE_URL } from "../data/site";
 
 interface Props {
@@ -59,6 +58,11 @@ const links = ["about", "work", "blog", "contact"] as const;
       </div>
     </nav>
     <slot />
-    <Analytics />
+    <script>
+      // Vercel Web Analytics. Tracks the address in the browser (/about),
+      // not the built file name (/about.html).
+      import { inject } from "@vercel/analytics";
+      inject({ framework: "astro" });
+    </script>
   </body>
 </html>
