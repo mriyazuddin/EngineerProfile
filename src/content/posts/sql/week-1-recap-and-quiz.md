@@ -5,6 +5,7 @@ day: 7
 date: 2026-11-08
 description: "A recap of week 1 of SQL from Scratch: what SQL and databases are, tables, practising in a browser, SELECT and data types."
 question: "Which of this week's ideas took the longest to click?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7525173240286363649/"
 ---
 
 Week 1 is done, and you've already read data with your first queries. Let's make sure the foundations are solid before we go further, because everything else in this series builds on them.
