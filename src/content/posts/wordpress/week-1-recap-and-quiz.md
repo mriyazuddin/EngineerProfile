@@ -5,6 +5,7 @@ day: 7
 date: 2026-11-08
 description: "A recap of week 1 of WordPress from Scratch: what WordPress is, what's free and what isn't, WordPress.com vs self-hosted, domains and hosting."
 question: "What made you curious about WordPress in the first place?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7525037298569146368/"
 ---
 
 Week 1 is done. You now know what WordPress is and what it takes to put a site online, which puts you ahead of many people who've only heard about it.
