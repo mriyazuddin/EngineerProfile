@@ -6,6 +6,7 @@ date: 2026-11-09
 description: "DISTINCT removes repeated values from a query's result, without changing the table, and helps you spot messy data."
 tryIt: "Add a repeated city to your practice table, then run the query with and without DISTINCT."
 question: "What column would you check for messy values first?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7525535707449290766/"
 ---
 
 Which cities do our customers come from? If you select the city column from customers, a city with 500 customers shows up 500 times. DISTINCT fixes that.
