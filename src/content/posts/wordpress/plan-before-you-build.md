@@ -6,6 +6,7 @@ date: 2026-11-09
 description: "Fifteen minutes of planning saves hours: decide your site's goal, picture your visitor, and sketch five starter pages before choosing a theme."
 tryIt: "Write one sentence for your site's purpose and one for your visitor, then list your pages."
 question: "What's the one thing you want your site's visitors to do?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7525399742449868800/"
 ---
 
 Most beginners start by choosing a default or a random theme. It's fast and lets you hit the ground running, but it often leads to rebuilding later. Fifteen minutes of planning on paper saves hours.
