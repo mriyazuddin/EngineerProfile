@@ -6,6 +6,7 @@ date: 2026-11-10
 description: "A database doesn't promise any row order unless you ask for it. ORDER BY sorts results, DESC reverses them, and you can sort by several columns."
 tryIt: "Sort your practice table by name, then reverse it with DESC."
 question: "What list at work do you re-sort most often?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7525898123232043009/"
 ---
 
 Here's something that surprises beginners: without instructions, a database doesn't promise any row order. If order matters, you have to ask for it with ORDER BY.
