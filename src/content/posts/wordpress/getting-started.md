@@ -6,6 +6,7 @@ date: 2026-11-10
 description: "There are two usual routes to your first WordPress site, signing up on WordPress.com or using a host's one-click installer, and neither needs code."
 tryIt: "Create a free test site or a staging site if your host offers one, so you have somewhere safe to practise."
 question: "Which route are you taking for your first site?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7525763095760334849/"
 ---
 
 You've got a plan. Now you need an actual WordPress site. There are two usual routes, and neither one requires you to write any code.
