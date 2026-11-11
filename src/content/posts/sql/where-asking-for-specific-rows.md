@@ -6,6 +6,7 @@ date: 2026-11-11
 description: "WHERE keeps only the rows that match a condition. Text goes in single quotes, and WHERE comes after FROM and before ORDER BY."
 tryIt: "Filter your practice table to one city. Then try a city that doesn't exist and see what comes back."
 question: "What's the first filter you'd run on your own data?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7526260260483776512/"
 ---
 
 So far, every query has returned every row. Real questions are narrower: which customers live in Lisbon? WHERE is how you ask.
