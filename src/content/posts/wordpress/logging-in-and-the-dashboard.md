@@ -6,6 +6,7 @@ date: 2026-11-11
 description: "Where to log in to WordPress, and the three parts of the dashboard that matter on day one: the admin menu, the toolbar and the main area."
 tryIt: "Log in, bookmark the page, then find the link that takes you to your live site."
 question: "What was your first impression of the dashboard?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7526124905449467904/"
 ---
 
 The first time you log in, WordPress can feel like a cockpit. There are lots of options, but you only need a few to begin with.
