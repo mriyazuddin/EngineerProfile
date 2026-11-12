@@ -6,6 +6,7 @@ date: 2026-11-12
 description: "Comparison operators let WHERE ask for values above, below or different from another value, and one character can change a report."
 tryIt: "In your own words, write the condition for \"orders that aren't delivered\". Then write it in SQL."
 question: "Which boundary mistake has caught you out in a report?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7526622717396201473/"
 ---
 
 WHERE can do much more than check whether two values are equal. Comparison operators let you ask for anything above, below or different from a value.
