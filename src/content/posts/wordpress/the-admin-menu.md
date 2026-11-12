@@ -6,6 +6,7 @@ date: 2026-11-12
 description: "A plain-language tour of the WordPress admin menu, from Posts and Media to Users, Tools and Settings."
 tryIt: "Click through each menu item without changing anything, and note one thing you find on each screen."
 question: "Which menu item are you most curious about?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7526486749196271616/"
 ---
 
 That long menu on the left becomes much less daunting once you know what each item does.
