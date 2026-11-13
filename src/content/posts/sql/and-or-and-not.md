@@ -6,6 +6,7 @@ date: 2026-11-13
 description: "AND, OR and NOT combine conditions in one query. AND runs before OR, so use brackets to say what you mean."
 tryIt: "Write a condition for \"customers in Lisbon who signed up in 2026\" using signup_date."
 question: "Do you add brackets even when they aren't strictly needed?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7526985210534686721/"
 ---
 
 Real questions often have more than one condition. Bags under 2,000. Customers in Lisbon or Hyderabad. AND, OR and NOT let you say that in one query.
