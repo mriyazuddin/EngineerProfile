@@ -22,21 +22,21 @@ const seriesCards = (["sql", "wordpress"] as const).map((key) => {
 });
 
 const stats = [
-  ["500+", "tickets resolved a month"],
-  ["90%+", "customer satisfaction"],
+  ["21", "APAC support roles recruited for at Automattic"],
+  ["23%", "lower average handle time at Deloitte"],
+  ["90%+", "customer satisfaction at Automattic"],
   ["100+", "support docs revamped"],
-  ["21", "APAC support hires at Automattic"],
 ];
 const strengths = [
-  ["WordPress and WooCommerce", "Themes, plugins, Stripe, PayPal, WooPayments, Bookings and Subscriptions."],
-  ["Domains, DNS and email", "The issues that sit between the site, the host and the inbox."],
+  ["Leading support teams", "Managed L1 and L2 support engineers at Teradata and led a service desk team at Deloitte."],
+  ["Hiring and training", "Six months on an APAC recruitment rotation at Automattic, and ran trainings there."],
+  ["Process and documentation", "Workflow coaching and a knowledge base overhaul at Deloitte. Revamped over 100 support docs at Automattic."],
+  ["Hands-on troubleshooting", "WordPress, WooCommerce, DNS, email and payments. I can still take the hard ticket myself."],
   ["Data and tools", "SQL queries, WP-CLI, browser DevTools, Zendesk, GitHub and Jira."],
-  ["Leading support teams", "Managed L1 and L2 support engineers at Teradata and led a service desk team at Deloitte. Ran a six-month APAC recruitment rotation at Automattic."],
-  ["Documentation", "Clear customer-facing guides, and training for the people answering tickets."],
 ];
 const roles = [
   ["Dec 2025 to present", "Technical Support Engineer, Freelance", "WordPress and WooCommerce builds and fixes for small businesses."],
-  ["Jun 2019 to Apr 2025", "Happiness Engineer, Automattic", "WordPress.com and WooCommerce support by email and live chat, using SQL to troubleshoot. Spent six months on an APAC recruitment rotation and ran trainings."],
+  ["Jun 2019 to Apr 2025", "Happiness Engineer, Automattic", "WordPress.com and WooCommerce support by email and live chat, using SQL to troubleshoot: 500+ tickets a month at 90%+ CSAT. Spent six months on an APAC recruitment rotation and ran trainings."],
   ["May 2018 to Apr 2019", "IT Support, Freelance", "On-site IT support for small businesses."],
   ["Sep 2016 to Apr 2018", "Senior Manager, Teradata", "Managed the L1 and L2 support engineers for Teradata products."],
   ["Aug 2005 to Sep 2016", "Manager, Service Desk, Deloitte", "Started as a front-line IT support analyst and went on to lead a team. Workflow coaching and a knowledge base overhaul cut average handle time from 17 to 13 minutes, about 23%."],
@@ -54,7 +54,7 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{NAME} | Support Engineer, Customer Success Engineer and Support Lead</title>
+    <title>{NAME} | Technical Support Lead</title>
     <meta name="description" content="Design preview of the new riyaz.blog homepage." />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -72,13 +72,13 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
     </nav>
 
     <header id="top" class="wrap hero">
-      <p class="status"><span aria-hidden="true"></span>Open to Support Engineer, Customer Success Engineer and Technical Support Lead/Manager roles</p>
-      <h1>I find out why it broke, fix it, and <span class="mark">write it down.</span></h1>
+      <p class="status"><span aria-hidden="true"></span>Open to Technical Support Lead roles</p>
+      <h1>I lead support teams that find out why it broke, fix it, and <span class="mark">write it down.</span></h1>
       <div class="hero-row">
-        <p class="lead">I'm {NAME}, a Technical Support Engineer in {LOCATION}. Nearly six years supporting WordPress.com and WooCommerce customers at Automattic, after managing support teams at Teradata and Deloitte.</p>
+        <p class="lead">I'm {NAME}, a technical support leader in {LOCATION}. I managed support teams at Teradata and Deloitte, then spent nearly six years at Automattic supporting WordPress.com and WooCommerce customers, recruiting for APAC support roles and running trainings.</p>
         <div class="actions">
           <a class="btn btn-blue" href={RESUME}>Download resume</a>
-          <a class="btn btn-line" href="/work">See my work</a>
+          <a class="btn btn-line" href="#experience">See my experience</a>
         </div>
       </div>
       <p class="aside">Need help with a WordPress site? <a href="#services">I also take freelance projects</a></p>
@@ -94,7 +94,7 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
       <div class="wrap section split">
         <div class="split-head">
           <h2>What I'm good at</h2>
-          <p class="sub">Solving customer problems one ticket at a time, and leading the teams that do it.</p>
+          <p class="sub">Leading the people who solve customer problems, and still able to solve them myself.</p>
         </div>
         <div class="rows">
           {strengths.map(([title, text]) => <div class="row"><h3>{title}</h3><p>{text}</p></div>)}
@@ -102,7 +102,14 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
       </div>
     </section>
 
-    <section class="wrap section">
+    <section id="experience" class="wrap section">
+      <div class="section-head"><h2>Experience</h2><a href="/about">Full story</a></div>
+      <div class="roles">
+        {roles.map(([when, role, text]) => <div class="role"><p class="when">{when}</p><h3>{role}</h3><p>{text}</p></div>)}
+      </div>
+    </section>
+
+    <section class="wrap section tight-top">
       <div class="section-head"><h2>Selected work</h2><a href="/work">All projects</a></div>
       <div class="cases">
         {selected.map((p) => (
@@ -116,13 +123,6 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
             </div>
           </article>
         ))}
-      </div>
-    </section>
-
-    <section class="wrap section tight-top">
-      <div class="section-head"><h2>Experience</h2><a href="/about">Full story</a></div>
-      <div class="roles">
-        {roles.map(([when, role, text]) => <div class="role"><p class="when">{when}</p><h3>{role}</h3><p>{text}</p></div>)}
       </div>
     </section>
 
@@ -159,7 +159,7 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
         <div class="doors">
           <div class="door door-main">
             <p class="eyebrow">Hiring for a role</p>
-            <h3>Support Engineer, Customer Success Engineer, or Technical Support Lead/Manager</h3>
+            <h3>Technical Support Lead</h3>
             <p>Email is the fastest way to reach me: <a class="mail" href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
             <div class="actions">
               <a class="btn btn-white" href={RESUME}>Download resume</a>
@@ -249,7 +249,7 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
   .hero { padding-top: 72px; padding-bottom: 56px; }
   .status { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 18px; background: #eef1ff; color: #16298f; font-size: 15px; font-weight: 500; line-height: 1.4; margin-bottom: 28px; }
   .status span { flex: 0 0 8px; width: 8px; height: 8px; border-radius: 50%; background: #2340d6; }
-  h1 { font-size: clamp(42px, 7.4vw, 100px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 700; max-width: 1080px; }
+  h1 { font-size: clamp(40px, 6.6vw, 88px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 700; max-width: 1080px; }
   /* Marker-style highlight on the lower half only, so it never covers the line above. */
   .mark { background-image: linear-gradient(to top, transparent 8%, #ffc53d 8%, #ffc53d 46%, transparent 46%); -webkit-box-decoration-break: clone; box-decoration-break: clone; }
   .hero-row { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: flex-end; justify-content: space-between; }
