@@ -6,6 +6,7 @@ date: 2026-11-13
 description: "Five minutes in Settings, then General: set your site title, tagline, language, timezone and date format before adding content."
 tryIt: "Open Settings, then General, and update your title, tagline and timezone."
 question: "What tagline would you write for your site in under ten words?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7526849332340310016/"
 ---
 
 Before you add any content, spend five minutes in Settings.
