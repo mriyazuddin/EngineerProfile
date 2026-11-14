@@ -6,6 +6,7 @@ date: 2026-11-14
 description: "Permalinks are your posts' permanent web addresses. Choose Post name early, because changing the pattern later can break links."
 tryIt: "Open Settings, then Permalinks, and see which pattern your site uses."
 question: "Have you ever clicked an old link that led nowhere?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7527211799423688704/"
 ---
 
 Which link would you rather click: yoursite.com/?p=123 or yoursite.com/contact?
