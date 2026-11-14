@@ -6,6 +6,7 @@ date: 2026-11-14
 description: "IN checks a value against a list and BETWEEN checks a range, including both ends, with one catch for dates and times."
 tryIt: "Rewrite this using IN: status = 'Shipped' OR status = 'Delivered'."
 question: "Which do you find easier to read, IN or a chain of ORs?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7527347484805890049/"
 ---
 
 Once you've written city = 'Lisbon' OR city = 'Toronto' OR city = 'Sydney', you'll want something shorter. IN and BETWEEN make common conditions easier to read.
