@@ -5,6 +5,7 @@ day: 14
 date: 2026-11-15
 description: "A recap of week 2 of SQL from Scratch: DISTINCT, ORDER BY, WHERE, comparison operators, AND, OR, NOT, IN and BETWEEN."
 question: "Would you like a second pair of eyes on your query? Share it on the LinkedIn post."
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7527709979584192512/"
 ---
 
 Filtering is where SQL starts answering real business questions. Let's see how much of this week stuck.
