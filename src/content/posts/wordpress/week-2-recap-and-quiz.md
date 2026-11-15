@@ -5,6 +5,7 @@ day: 14
 date: 2026-11-15
 description: "A recap of week 2 of WordPress from Scratch: planning, getting started, the dashboard, the admin menu, first settings and permalinks."
 question: "What's your guess, before tomorrow's post?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7527574040807436288/"
 ---
 
 You've gone from a plan on paper to a working site with the basics set up. Most of what you do from here will happen on the screens you met this week.
