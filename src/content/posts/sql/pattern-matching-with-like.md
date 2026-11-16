@@ -6,6 +6,7 @@ date: 2026-11-16
 description: "LIKE finds partial matches using two wildcards: % for any number of characters and _ for exactly one."
 tryIt: "Write a pattern for names that end in \"a\"."
 question: "What would you search for with LIKE at work?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7528072284071227392/"
 ---
 
 What if you only know part of what you're looking for? Maybe it's an email ending in gmail.com, or a product with "leather" somewhere in its name. That's what LIKE is for.
