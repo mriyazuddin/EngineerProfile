@@ -6,6 +6,7 @@ date: 2026-11-17
 description: "NULL means a value is missing or unknown. Why WHERE email = NULL returns nothing, and how IS NULL fixes it."
 tryIt: "Think of a form where a field can be left blank. Should a blank be stored as NULL or as empty text?"
 question: "Has a missing value ever broken one of your reports?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7528434817265197056/"
 ---
 
 Here's a query that looks right and returns nothing: WHERE email = NULL. If that seems odd, you're about to learn one of SQL's most important ideas.
