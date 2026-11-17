@@ -6,6 +6,7 @@ date: 2026-11-17
 description: "Categories are the broad sections of your site, and tags are optional details that cut across them. A few habits keep both tidy."
 tryIt: "Write down three to five categories for your site. Then think of two tags that could cross them."
 question: "What categories would suit your site?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7528298862155980800/"
 ---
 
 Both categories and tags organise your posts, and most people use them interchangeably. There's a simple difference that keeps your site tidy.
