@@ -6,6 +6,7 @@ date: 2026-11-18
 description: "Resize and compress images before you upload, name files clearly and write useful alt text. Plus what WordPress 7.2 changes."
 tryIt: "Open your media library, pick one image and write its alt text."
 question: "How would you describe your site's main photo in one sentence?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7528661308494471168/"
 ---
 
 Large photos are one of the most common reasons for slow websites, and it's easy to fix before you upload. Your images all live in the media library.
