@@ -6,6 +6,7 @@ date: 2026-11-18
 description: "COALESCE returns the first value that isn't NULL, so you can choose what a missing value shows in your results."
 tryIt: "On your practice table, show 'Unknown' for any person whose city is NULL."
 question: "Where would a fallback value make your reports clearer?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7528797085698060288/"
 ---
 
 A report with blank cells raises questions. Is the value zero, unknown or a bug? COALESCE lets you decide what a NULL should show.
