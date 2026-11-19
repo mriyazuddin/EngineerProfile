@@ -6,6 +6,7 @@ date: 2026-11-19
 description: "AS gives a column a friendlier name in your result without changing the table, and why aliases don't work in WHERE."
 tryIt: "Run a SELECT on your practice table and rename both columns."
 question: "What's the most confusing column name you've come across?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7529159575288045568/"
 ---
 
 Column names are often written for databases, not for people. AS gives a column a friendlier name in your result, which makes reports far easier to read.
