@@ -5,8 +5,8 @@ const posts = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/posts" }),
   schema: z.object({
     title: z.string(),
-    series: z.enum(["sql", "wordpress"]),
-    day: z.number().int().min(1).max(60),
+    series: z.enum(["sql", "wordpress", "leadership"]),
+    day: z.number().int().min(1).max(60).optional(),
     date: z.coerce.date(),
     description: z.string(),
     tryIt: z.string().optional(),

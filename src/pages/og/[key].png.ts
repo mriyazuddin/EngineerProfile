@@ -59,11 +59,12 @@ export async function getStaticPaths() {
     ["blog", "blog", "Daily lessons in WordPress and SQL"],
     ["blog-sql", "blog", series.sql.name],
     ["blog-wordpress", "blog", series.wordpress.name],
+    ["blog-leadership", "blog", series.leadership.name],
     ["contact", "contact", "Open a ticket with me."],
   ].map(([key, label, title]) => ({ params: { key }, props: { label, title } }));
   const posts = (await allPosts()).map((p) => ({
     params: { key: postOgKey(p) },
-    props: { label: `${series[p.data.series].name} · Day ${p.data.day}`, title: p.data.title },
+    props: { label: p.data.day ? `${series[p.data.series].name} · Day ${p.data.day}` : series[p.data.series].name, title: p.data.title },
   }));
   return [...fixed, ...posts];
 }

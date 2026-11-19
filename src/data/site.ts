@@ -43,7 +43,8 @@ export const projects = [
 ];
 
 export const series = {
-  sql: { name: "SQL from Scratch", short: "SQL", path: "/blog/sql" },
-  wordpress: { name: "WordPress from Scratch", short: "WordPress", path: "/blog/wordpress" },
+  sql: { name: "SQL from Scratch", short: "SQL", path: "/blog/sql", about: "daily lessons for complete beginners" },
+  wordpress: { name: "WordPress from Scratch", short: "WordPress", path: "/blog/wordpress", about: "daily lessons for complete beginners" },
+  leadership: { name: "Leadership", short: "Leadership", path: "/blog/leadership", about: "lessons from leading support teams" },
 } as const;
 export type SeriesKey = keyof typeof series;

@@ -18,7 +18,7 @@ export async function getStaticPaths() {
         props: { kind: "list", filter: key, posts: posts.slice(i * PAGE_SIZE, (i + 1) * PAGE_SIZE), page: i + 1, lastPage },
       });
     }
-    const byDay = [...posts].sort((a, b) => a.data.day - b.data.day);
+    const byDay = [...posts].sort((a, b) => (a.data.day ?? 0) - (b.data.day ?? 0) || a.data.date.getTime() - b.data.date.getTime());
     byDay.forEach((post, i) => {
       paths.push({
         params: { series: key, rest: postSlug(post) },
@@ -46,14 +46,14 @@ const Content = post ? (await render(post)).Content : null;
     published={isoDate(post.data.date)}
   >
     <article class="post">
-      <div class="post-meta">{series[post.data.series].name} · Day {post.data.day} of 60 · <time datetime={isoDate(post.data.date)}>{longDate(post.data.date)}</time></div>
+      <div class="post-meta">{series[post.data.series].name} · {post.data.day && <>Day {post.data.day} of 60 · </>}<time datetime={isoDate(post.data.date)}>{longDate(post.data.date)}</time></div>
       <h1>{post.data.title}</h1>
       <div class="post-body"><Content /></div>
       {post.data.tryIt && <aside class="try"><h2>Try it</h2><p>{post.data.tryIt}</p></aside>}
       {post.data.question && <p class="question">{post.data.question}</p>}
       {post.data.linkedinUrl
         ? <a class="post-link" href={post.data.linkedinUrl}>Join the conversation on LinkedIn</a>
-        : <a class="post-link" href={LINKEDIN}>Follow the series on LinkedIn</a>}
+        : <a class="post-link" href={LINKEDIN}>{post.data.day ? "Follow the series on LinkedIn" : "Connect with me on LinkedIn"}</a>}
       {(prev || next) && (
         <nav class="series-nav" aria-label="Series">
           {prev ? <a href={postPath(prev)}>Previous: {prev.data.title}</a> : <span />}

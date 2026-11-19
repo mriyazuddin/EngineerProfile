@@ -1,5 +1,5 @@
 import { getCollection, type CollectionEntry } from "astro:content";
-import type { SeriesKey } from "../data/site";
+import { series, type SeriesKey } from "../data/site";
 
 export type Post = CollectionEntry<"posts">;
 export const PAGE_SIZE = 20;
@@ -17,6 +17,9 @@ export async function allPosts(series?: SeriesKey): Promise<Post[]> {
 export const postSlug = (p: Post) => p.id.split("/").pop()!;
 export const postPath = (p: Post) => `/blog/${p.data.series}/${postSlug(p)}`;
 export const ogPath = (key: string) => `/og/${key}.png`;
+// "SQL · Day 4" for the daily series; just the series name for posts without a day.
+export const postLabel = (p: Post) =>
+  p.data.day ? `${series[p.data.series].short} · Day ${p.data.day}` : series[p.data.series].short;
 export const postOgKey = (p: Post) => `post-${p.data.series}-${postSlug(p)}`;
 
 const fmt = (d: Date, o: Intl.DateTimeFormatOptions) =>
