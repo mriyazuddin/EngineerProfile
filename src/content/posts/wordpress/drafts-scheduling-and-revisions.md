@@ -6,6 +6,7 @@ date: 2026-11-20
 description: "Save drafts, schedule posts for later and restore earlier versions with revisions, for a calmer publishing workflow."
 tryIt: "Create a draft, preview it, change a sentence and save again. Then find its revisions."
 question: "Do you prefer to publish straight away, or to schedule ahead?"
+linkedinUrl: "https://lnkd.in/p/duphfYzg"
 ---
 
 You don't have to finish a post in one sitting, publish it the moment it's ready, or worry about losing an older version. Three built-in features take care of this.

@@ -6,6 +6,7 @@ date: 2026-11-20
 description: "SQL can add, subtract, multiply and divide as it reads your data, with two catches: whole-number division and NULL."
 tryIt: "Write a query that shows each product's price with 18% added, under the name price_with_tax."
 question: "What calculation do you currently do by hand in a spreadsheet?"
+linkedinUrl: "https://lnkd.in/p/dBU3cT_v"
 ---
 
 SQL can do arithmetic while it reads your data. You don't need to export anything to a spreadsheet just to multiply two columns.
