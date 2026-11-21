@@ -6,6 +6,7 @@ date: 2026-11-21
 description: "UPPER, LOWER, LENGTH, SUBSTR and TRIM clean up and reshape text as you read it, without changing the stored data."
 tryIt: "Show the first three letters of each city in your practice table, in capitals."
 question: "What's the messiest text column you've had to deal with?"
+linkedinUrl: "https://lnkd.in/p/dwGKRgx2"
 ---
 
 Real data is messy. Names arrive in odd capitals, with stray spaces and codes squeezed together. Text functions let you clean these up as you read them.
