@@ -6,6 +6,7 @@ date: 2026-11-21
 description: "Every paragraph, image and heading in WordPress is a block. What blocks are, why WordPress moved to them and how to add one."
 tryIt: "Create a draft page, add a heading, a paragraph and an image, then swap their order."
 question: "What's the first thing you'd like to build using blocks?"
+linkedinUrl: "https://lnkd.in/p/dZ5HyVyN"
 ---
 
 Every paragraph, image and heading in WordPress is its own building block. Once this idea clicks, the editor stops feeling strange.
