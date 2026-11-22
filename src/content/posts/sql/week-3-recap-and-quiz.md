@@ -5,6 +5,7 @@ day: 21
 date: 2026-11-22
 description: "A recap of week 3 of SQL from Scratch: LIKE, NULL, COALESCE, AS, calculations and text functions."
 question: "What question do you hope to answer once you can summarise data?"
+linkedinUrl: "https://lnkd.in/p/dFHRHWdq"
 ---
 
 Your queries can now search, handle missing values, rename columns and calculate. That's a useful set of skills already, and most everyday queries need nothing more than these.
