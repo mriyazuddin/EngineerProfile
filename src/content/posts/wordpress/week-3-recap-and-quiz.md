@@ -5,6 +5,7 @@ day: 21
 date: 2026-11-22
 description: "A recap of week 3 of WordPress from Scratch: posts and pages, categories and tags, media, featured images, drafts and blocks."
 question: "What's your first page or post going to be?"
+linkedinUrl: "https://lnkd.in/p/dTbTkDa2"
 ---
 
 This week, you learned how WordPress organises content and met the blocks it's built from. These decisions are simple, and they make a real difference as your site grows.
