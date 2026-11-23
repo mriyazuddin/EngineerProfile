@@ -6,6 +6,7 @@ date: 2026-11-23
 description: "COUNT turns many rows into one number. COUNT(*) vs COUNT(column), counting with WHERE, and counting unique values with DISTINCT."
 tryIt: "Write a query that counts how many orders have a status of 'Delivered'."
 question: "What number would you want to count first in your own data?"
+linkedinUrl: "https://lnkd.in/p/dfhUAMgA"
 ---
 
 How many customers do we have? So far, you'd have to scroll through a list and count. COUNT gives you the answer in one line.
