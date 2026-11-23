@@ -6,6 +6,7 @@ date: 2026-11-23
 description: "Paragraph, heading, image, list and button cover most of what you build in WordPress. How to use each one, and the slash shortcut."
 tryIt: "Build a short About section using a heading, a paragraph, an image and a button."
 question: "Which of these blocks will you use most?"
+linkedinUrl: "https://lnkd.in/p/dgnqR7Wx"
 ---
 
 There are dozens of blocks available, but a small handful will cover most of what you build. Learn these five first.
