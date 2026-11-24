@@ -6,6 +6,7 @@ date: 2026-11-24
 description: "Group, Columns and Cover arrange blocks into the sections you see on modern websites. Plus List View for nested blocks."
 tryIt: "Create a Cover with a headline. Beneath it, add a Columns block with three short services."
 question: "What's a website section you'd like to recreate using blocks?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7530835604922896385/"
 ---
 
 Everyday blocks stack from top to bottom. Layout blocks let you arrange them side by side and create the sections you see on modern websites.
