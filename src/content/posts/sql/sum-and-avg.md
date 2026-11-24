@@ -6,6 +6,7 @@ date: 2026-11-24
 description: "SUM totals a column and AVG finds the mean, in one query. Plus two catches: both ignore NULLs, and an average can mislead."
 tryIt: "Write a query for the total quantity of items ever sold."
 question: "Which business number would you check with SUM first?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7530971538364194817/"
 ---
 
 What's the total value of everything we've sold? What's a typical order size? SUM and AVG answer these in a single query, however many rows are involved.
