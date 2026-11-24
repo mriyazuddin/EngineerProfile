@@ -1,0 +1,49 @@
+---
+// Main menu from the design B homepage, shared by every page.
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/space-grotesk/700.css";
+import { RESUME } from "../data/site";
+
+interface Props {
+  active?: "about" | "work" | "blog" | "contact";
+  dark?: boolean;
+  home?: boolean;
+}
+const { active, dark = false, home = false } = Astro.props;
+const links = [
+  ["about", "About", "/about"],
+  ["work", "Work", "/work"],
+  ["services", "Services", home ? "#services" : "/#services"],
+  ["blog", "Blog", "/blog"],
+] as const;
+---
+<nav class:list={["mainnav", { "mainnav-dark": dark }]} aria-label="Main">
+  <a class="mainnav-brand" href="/">Riyaz<span>.</span></a>
+  <div class="mainnav-links">
+    {links.map(([key, label, href]) => <a href={href} aria-current={active === key ? "page" : undefined}>{label}</a>)}
+    <a class="mainnav-pill" href={RESUME}>Resume</a>
+  </div>
+</nav>
+
+<style>
+  .mainnav { max-width: 1200px; margin: 0 auto; padding: 20px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; font-family: "Inter", system-ui, sans-serif; font-size: 15px; font-weight: 500; line-height: 1.2; }
+  .mainnav a { min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; }
+  .mainnav a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .mainnav-brand { font-family: "Space Grotesk", system-ui, sans-serif; font-size: 20px; font-weight: 700; color: #101418; }
+  .mainnav-brand span { color: #2340d6; }
+  .mainnav-links { display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: center; }
+  .mainnav-links a { color: #101418; }
+  .mainnav-links a:hover { color: #2340d6; }
+  .mainnav-links a[aria-current="page"] { color: #2340d6; font-weight: 600; }
+  .mainnav-links .mainnav-pill { padding: 0 20px; border-radius: 999px; background: #101418; color: #fff; font-weight: 600; }
+  .mainnav-links .mainnav-pill:hover { background: #2340d6; color: #fff; }
+  .mainnav-dark .mainnav-brand, .mainnav-dark .mainnav-links a { color: #fff; }
+  .mainnav-dark .mainnav-brand span, .mainnav-dark .mainnav-links a:hover, .mainnav-dark .mainnav-links a[aria-current="page"] { color: #ffc53d; }
+  .mainnav-dark .mainnav-links .mainnav-pill { background: #fff; color: #101418; }
+  .mainnav-dark .mainnav-links .mainnav-pill:hover { background: #ffc53d; color: #101418; }
+  @media (max-width: 600px) {
+    .mainnav { padding-left: 20px; padding-right: 20px; }
+    .mainnav-links { gap: 4px 18px; }
+  }
+</style>
