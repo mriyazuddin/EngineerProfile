@@ -15,7 +15,7 @@ npm run preview  # serves dist/
 
 ## Content
 
-- Profile, experience and projects: `src/data/site.ts`
+- Profile, experience, leadership highlights and projects: `src/data/site.ts` (homepage layout: `src/pages/index.astro`)
 - Resume: `public/resume.pdf`
 - Project screenshots: `public/projects/`
 

@@ -6,26 +6,11 @@ export const GITHUB = "https://github.com/mriyazuddin";
 export const LOCATION = "Hyderabad, India";
 export const RESUME = "/resume.pdf";
 
-export const trackRecord = [
-  ["years_in_support", "close to 20"],
-  ["support_roles_hired_for", "21"],
-  ["avg_handle_time_min", "17 → 13"],
-  ["repeat_calls", "27% → 12%"],
-  ["support_docs_written", "100+"],
-];
-
 export const leadershipAreas = [
   { title: "Leading through leads", text: "At Teradata, a manager reported to me with two team leads under them. At Deloitte, I managed a large team through assistant managers and team leads." },
   { title: "Hiring", text: "Hired for 21 support roles in a six-month APAC recruitment rotation at Automattic, and led candidates through its trial process." },
   { title: "Coaching and performance", text: "Coaching, mentoring and performance management, and trainings for support teammates. A clear quality bar, and help reaching it." },
   { title: "Support operations", text: "Projects at Deloitte that cut average handle time from 17 to 13 minutes and repeat calls from 27% to 12%." },
-];
-
-export const debugAreas = [
-  { title: "WordPress and WooCommerce", text: "Themes, plugins, Stripe, PayPal, WooPayments, Bookings and Subscriptions." },
-  { title: "Domains, DNS and email", text: "The issues that sit between the site, the host and the inbox." },
-  { title: "Data and tools", text: "SQL queries, WP-CLI, browser DevTools, Zendesk, GitHub and Jira." },
-  { title: "Documentation", text: "Clear customer-facing guides, and training for the people answering tickets." },
 ];
 
 export const experience = [
