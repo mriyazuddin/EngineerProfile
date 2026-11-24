@@ -9,7 +9,7 @@ export const RESUME = "/resume.pdf";
 export const leadershipAreas = [
   { title: "Leading through leads", text: "At Teradata, a manager reported to me with two team leads under them. At Deloitte, I managed a large team through assistant managers and team leads." },
   { title: "Hiring", text: "Hired for 21 support roles in a six-month APAC recruitment rotation at Automattic, and led candidates through its trial process." },
-  { title: "Coaching and performance", text: "Coaching, mentoring and performance management, and trainings for support teammates. A clear quality bar, and help reaching it." },
+  { title: "Training, coaching and performance", text: "Cut training duration by 50% at Teradata. Coaching, mentoring and performance management, and trainings for support teammates at Automattic. A clear quality bar, and help reaching it." },
   { title: "Support operations", text: "Projects at Deloitte that cut average handle time from 17 to 13 minutes and repeat calls from 27% to 12%." },
 ];
 
