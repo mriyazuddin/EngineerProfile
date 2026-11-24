@@ -53,8 +53,8 @@ function card(label: string, title: string): Uint8Array {
 
 export async function getStaticPaths() {
   const fixed = [
-    ["home", "status: open to work", "I find out why it broke, fix it, and write it down."],
-    ["about", "about", "Support Engineer and Customer Success Engineer"],
+    ["home", "status: open to work", "I lead support teams, and I still find out why it broke."],
+    ["about", "about", "Technical support leader, close to two decades in support"],
     ["work", "work", "WordPress and WooCommerce projects"],
     ["blog", "blog", "Daily lessons in WordPress and SQL"],
     ["blog-sql", "blog", series.sql.name],

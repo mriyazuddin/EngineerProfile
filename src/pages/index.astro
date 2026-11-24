@@ -1,10 +1,11 @@
 ---
 import Base from "../layouts/Base.astro";
-import { LINKEDIN, LOCATION, NAME, RESUME, debugAreas, projects, series, trackRecord } from "../data/site";
+import { LINKEDIN, LOCATION, NAME, RESUME, debugAreas, leadershipAreas, projects, series, trackRecord } from "../data/site";
 import { allPosts, postPath } from "../lib/posts";
 
 const posts = await allPosts();
 const selected = projects.slice(0, 2);
+const leadershipPost = posts.find((p) => p.data.series === "leadership");
 const seriesCards = (["sql", "wordpress"] as const).map((key) => {
   const latest = posts.find((p) => p.data.series === key);
   return {
@@ -15,27 +16,27 @@ const seriesCards = (["sql", "wordpress"] as const).map((key) => {
 });
 ---
 <Base
-  title="Mohammed Riyazuddin | Support Engineer and Customer Success Engineer"
-  description="Technical Support Engineer in Hyderabad, India, open to Support Engineer and Customer Success Engineer roles. WordPress, WooCommerce, JavaScript, CSS and SQL."
+  title="Mohammed Riyazuddin | Technical Support Leader"
+  description="Technical support leader in Hyderabad, India, with close to two decades in support. Led support teams at Deloitte and Teradata. Open to Support Engineer, Support Lead and Support Manager roles."
   path="/"
   ogKey="home"
   type="profile"
 >
   <header class="wrap hero">
     <div class="hero-copy">
-      <p class="status">status: open to Support Engineer and Customer Success Engineer roles</p>
-      <h1>I find out why it broke, fix it, and write it down.</h1>
-      <p class="lead">I'm Mohammed Riyazuddin, a Technical Support Engineer in Hyderabad, India. I work across WordPress, WooCommerce, DNS, payments and SQL.</p>
+      <p class="status">status: open to Support Engineer, Support Lead and Support Manager roles</p>
+      <h1>I lead support teams, and I still find out why it broke.</h1>
+      <p class="lead">I'm Mohammed Riyazuddin, a technical support leader in Hyderabad, India. I've spent close to two decades in support: leading support teams at Deloitte and Teradata, then almost 7 years in support engineering, most of it at Automattic. I still enjoy debugging a broken checkout as much as building the team that handles it.</p>
       <div class="actions">
         <a class="btn btn-primary" href={RESUME}>Download resume</a>
-        <a class="btn btn-outline" href="/work">See my work</a>
+        <a class="btn btn-outline" href="/about">See my experience</a>
       </div>
     </div>
     <div class="console">
       <div class="console-title">track_record.sql</div>
       <div class="console-body">
         <div><span class="kw">SELECT</span> metric, result</div>
-        <div><span class="kw">FROM</span> automattic_support;</div>
+        <div><span class="kw">FROM</span> support_career;</div>
         <table>
           <tbody>
             {trackRecord.map(([metric, result]) => <tr><td>{metric}</td><td>{result}</td></tr>)}
@@ -45,9 +46,17 @@ const seriesCards = (["sql", "wordpress"] as const).map((key) => {
     </div>
   </header>
 
+  <section class="wrap section">
+    <h2>How I lead support teams</h2>
+    <div class="grid-4">
+      {leadershipAreas.map((a) => <div class="area"><h3>{a.title}</h3><p>{a.text}</p></div>)}
+    </div>
+    {leadershipPost && <p class="lead-more">From the leadership series: <a href={postPath(leadershipPost)}>{leadershipPost.data.title}</a></p>}
+  </section>
+
   <section class="band">
     <div class="wrap section">
-      <h2>What I debug</h2>
+      <h2>What I still debug myself</h2>
       <div class="grid-4">
         {debugAreas.map((a) => <div class="area"><h3>{a.title}</h3><p>{a.text}</p></div>)}
       </div>
