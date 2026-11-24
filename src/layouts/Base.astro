@@ -8,6 +8,7 @@ import "@fontsource/ibm-plex-mono/500.css";
 import "@fontsource/ibm-plex-mono/600.css";
 import "../styles/site.css";
 import { NAME, SITE_URL } from "../data/site";
+import Nav from "../components/Nav.astro";
 
 interface Props {
   title: string;
@@ -23,7 +24,6 @@ interface Props {
 const { title, description, path, ogKey, active, dark = false, type = "website", published, noindex = false } = Astro.props;
 const url = SITE_URL + (path === "/" ? "/" : path);
 const image = `${SITE_URL}/og/${ogKey}.png`;
-const links = ["about", "work", "blog", "contact"] as const;
 ---
 <!doctype html>
 <html lang="en">
@@ -51,12 +51,7 @@ const links = ["about", "work", "blog", "contact"] as const;
     <meta name="twitter:image" content={image} />
   </head>
   <body class={dark ? "dark" : ""}>
-    <nav class="site-nav" aria-label="Main">
-      <a class="brand" href="/">riyaz.blog</a>
-      <div class="nav-links">
-        {links.map((l) => <a href={`/${l}`} aria-current={active === l ? "page" : undefined}>{l}</a>)}
-      </div>
-    </nav>
+    <Nav active={active} dark={dark} />
     <slot />
     <script>
       // Vercel Web Analytics. Tracks the address in the browser (/about),

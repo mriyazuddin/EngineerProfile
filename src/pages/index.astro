@@ -8,6 +8,7 @@ import "@fontsource/space-grotesk/600.css";
 import "@fontsource/space-grotesk/700.css";
 import { EMAIL, GITHUB, LINKEDIN, LOCATION, NAME, RESUME, SITE_URL, experience, leadershipAreas, projects, series } from "../data/site";
 import { allPosts, postPath } from "../lib/posts";
+import Nav from "../components/Nav.astro";
 
 const posts = await allPosts();
 const selected = projects.slice(0, 2);
@@ -68,16 +69,7 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
     <meta name="twitter:image" content={image} />
   </head>
   <body>
-    <nav class="nav" aria-label="Main">
-      <a class="brand" href="/">Riyaz<span>.</span></a>
-      <div class="nav-links">
-        <a href="/about">About</a>
-        <a href="/work">Work</a>
-        <a href="#services">Services</a>
-        <a href="/blog">Blog</a>
-        <a class="pill-dark" href={RESUME}>Resume</a>
-      </div>
-    </nav>
+    <Nav home />
 
     <header id="top" class="wrap hero">
       <p class="status"><span aria-hidden="true"></span>Open to Support Engineer, Support Lead and Support Manager roles</p>
@@ -231,7 +223,7 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
   html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
   body { margin: 0; background: #fff; color: #101418; font-family: "Inter", system-ui, sans-serif; overflow-wrap: break-word; }
   h1, h2, h3, p { margin: 0; }
-  h1, h2, h3, .brand, .num, .idx, .series-title { font-family: "Space Grotesk", system-ui, sans-serif; }
+  h1, h2, h3, .num, .idx, .series-title { font-family: "Space Grotesk", system-ui, sans-serif; }
   img { display: block; max-width: 100%; }
   a { color: #2340d6; }
   a:hover { color: #16298f; }
@@ -244,15 +236,6 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
   h2 { font-size: clamp(32px, 4vw, 44px); line-height: 1.05; letter-spacing: -0.02em; }
   .sub { margin-top: 14px; font-size: 18px; line-height: 1.6; color: #414b57; }
 
-  .nav { max-width: 1200px; margin: 0 auto; padding: 20px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; font-size: 15px; font-weight: 500; }
-  .brand { font-size: 20px; font-weight: 700; color: #101418; text-decoration: none; }
-  .brand span { color: #2340d6; }
-  .nav-links { display: flex; flex-wrap: wrap; gap: 4px 28px; align-items: center; }
-  .nav a { min-height: 44px; display: inline-flex; align-items: center; }
-  .nav-links a { color: #101418; text-decoration: none; }
-  .nav-links a:hover { color: #2340d6; }
-  .nav-links .pill-dark { padding: 0 20px; border-radius: 999px; background: #101418; color: #fff; font-weight: 600; }
-  .nav-links .pill-dark:hover { background: #2340d6; color: #fff; }
 
   .hero { padding-top: 72px; padding-bottom: 56px; }
   .status { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 18px; background: #eef1ff; color: #16298f; font-size: 15px; font-weight: 500; line-height: 1.4; margin-bottom: 28px; }
@@ -346,11 +329,10 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
   .foot a { color: #fff; min-height: 44px; display: inline-flex; align-items: center; }
 
   @media (max-width: 600px) {
-    .wrap, .nav { padding-left: 20px; padding-right: 20px; }
+    .wrap { padding-left: 20px; padding-right: 20px; }
     .hero { padding-top: 40px; }
     .section { padding-top: 56px; padding-bottom: 56px; }
     .tight-top { padding-top: 0; }
     .case-body { padding: 24px; }
-    .nav-links { gap: 4px 18px; }
   }
 </style>

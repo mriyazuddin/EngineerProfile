@@ -18,12 +18,6 @@ img { display: block; max-width: 100%; }
 .wrap { max-width: 1160px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
 .mono { font-family: var(--mono); }
 
-.site-nav { max-width: 1160px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; font-family: var(--mono); font-size: 14px; }
-.brand { font-weight: 600; color: var(--ink); text-decoration: none; padding: 12px 0; }
-body.dark .brand { color: var(--white); }
-.nav-links { display: flex; flex-wrap: wrap; gap: 4px 20px; align-items: center; }
-.nav-links a { padding: 12px 0; }
-.nav-links a[aria-current] { font-weight: 600; }
 
 .hero { padding-top: 56px; padding-bottom: 72px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
 .hero-copy { flex: 1 1 500px; min-width: 0; }
@@ -137,5 +131,5 @@ body.dark .contact-mail:hover { background: var(--white); color: var(--night); }
 .contact .where { margin-top: 40px; color: #c5d3da; }
 
 /* Keep text links in navigation at a 44px touch target. */
-.brand, .nav-links a, .section-head a, .site-footer a, .project a, .series-nav a, .post-link, .contact-links a, .pager a { display: inline-flex; align-items: center; min-height: 44px; padding-top: 0; padding-bottom: 0; }
+.section-head a, .site-footer a, .project a, .series-nav a, .post-link, .contact-links a, .pager a { display: inline-flex; align-items: center; min-height: 44px; padding-top: 0; padding-bottom: 0; }
 .post-body .try p { margin-bottom: 0; }
