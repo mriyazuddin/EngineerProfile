@@ -21,11 +21,34 @@ const links = [
 ---
 <nav class:list={["mainnav", { "mainnav-dark": dark }]} aria-label="Main">
   <a class="mainnav-brand" href="/">Riyaz<span>.</span></a>
-  <div class="mainnav-links">
+  <button type="button" class="mainnav-toggle" aria-expanded="false" aria-controls="mainnav-links" hidden>
+    <span class="mainnav-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    <span class="mainnav-sr">Menu</span>
+  </button>
+  <div class="mainnav-links" id="mainnav-links">
     {links.map(([key, label, href]) => <a href={href} aria-current={active === key ? "page" : undefined}>{label}</a>)}
     <a class="mainnav-pill" href={RESUME}>Resume</a>
   </div>
 </nav>
+
+<script>
+  // Mobile menu. Without JavaScript the button stays hidden and the links show as a normal list.
+  const nav = document.querySelector<HTMLElement>(".mainnav");
+  const toggle = nav?.querySelector<HTMLButtonElement>(".mainnav-toggle");
+  if (nav && toggle) {
+    nav.classList.add("mainnav-js");
+    toggle.hidden = false;
+    const setOpen = (open: boolean) => {
+      toggle.setAttribute("aria-expanded", String(open));
+      nav.classList.toggle("mainnav-open", open);
+    };
+    toggle.addEventListener("click", () => setOpen(toggle.getAttribute("aria-expanded") !== "true"));
+    nav.querySelectorAll(".mainnav-links a").forEach((a) => a.addEventListener("click", () => setOpen(false)));
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && nav.classList.contains("mainnav-open")) { setOpen(false); toggle.focus(); }
+    });
+  }
+</script>
 
 <style>
   .mainnav { max-width: 1200px; margin: 0 auto; padding: 20px 32px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; font-family: "Inter", system-ui, sans-serif; font-size: 15px; font-weight: 500; line-height: 1.2; }
@@ -43,8 +66,27 @@ const links = [
   .mainnav-dark .mainnav-brand span, .mainnav-dark .mainnav-links a:hover, .mainnav-dark .mainnav-links a[aria-current="page"] { color: #ffc53d; }
   .mainnav-dark .mainnav-links .mainnav-pill { background: #fff; color: #101418; }
   .mainnav-dark .mainnav-links .mainnav-pill:hover { background: #ffc53d; color: #101418; }
-  @media (max-width: 600px) {
+  .mainnav-toggle { display: none; }
+  .mainnav-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  @media (max-width: 720px) {
     .mainnav { padding-left: 20px; padding-right: 20px; }
     .mainnav-links { gap: 4px 18px; }
+    .mainnav-js .mainnav-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-right: -10px; padding: 0; border: 0; background: none; color: #101418; cursor: pointer; border-radius: 8px; }
+    .mainnav-js .mainnav-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+    .mainnav-dark .mainnav-toggle { color: #fff; }
+    .mainnav-bars { position: relative; width: 22px; height: 16px; display: block; }
+    .mainnav-bars span { position: absolute; left: 0; width: 100%; height: 2px; border-radius: 2px; background: currentColor; transition: transform 0.2s ease, opacity 0.2s ease; }
+    .mainnav-bars span:nth-child(1) { top: 0; }
+    .mainnav-bars span:nth-child(2) { top: 7px; }
+    .mainnav-bars span:nth-child(3) { top: 14px; }
+    .mainnav-open .mainnav-bars span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .mainnav-open .mainnav-bars span:nth-child(2) { opacity: 0; }
+    .mainnav-open .mainnav-bars span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mainnav-js .mainnav-links { display: none; flex-basis: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 0 12px; border-top: 1px solid #c9ced6; }
+    .mainnav-dark.mainnav-js .mainnav-links { border-top-color: #3a424e; }
+    .mainnav-open .mainnav-links { display: flex; }
+    .mainnav-js .mainnav-links a { font-size: 18px; min-height: 48px; }
+    .mainnav-js .mainnav-links .mainnav-pill { margin-top: 8px; justify-content: center; }
   }
+  @media (prefers-reduced-motion: reduce) { .mainnav-bars span { transition: none; } }
 </style>
