@@ -6,6 +6,7 @@ date: 2026-11-25
 description: "MIN and MAX find the extremes in a column, for numbers, dates and text. And why SELECT name, MAX(price) isn't what it seems."
 tryIt: "Write a query that finds the earliest signup_date among your customers."
 question: "Where would a MIN or MAX check catch bad data for you?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7531333854909947904/"
 ---
 
 What's our cheapest product? When was our most recent order? MIN and MAX find the extremes in a column, and they work on more than numbers.
