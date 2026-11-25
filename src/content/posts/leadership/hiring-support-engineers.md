@@ -2,6 +2,7 @@
 title: "Hiring Support Engineers: Interview Practices and Common Mistakes"
 series: leadership
 date: 2026-11-25
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7531301303348744192/"
 description: "What to look for when hiring support engineers, how to run interviews and trials that look like the job, and the mistakes interviewers make most often."
 ---
 
