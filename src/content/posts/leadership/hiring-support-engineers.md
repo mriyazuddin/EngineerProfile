@@ -5,9 +5,9 @@ date: 2026-11-25
 description: "What to look for when hiring support engineers, how to run interviews and trials that look like the job, and the mistakes interviewers make most often."
 ---
 
-Most support interviews test the wrong thing. They reward people who talk well about technology, for a job that is mostly writing clearly to someone who is frustrated.
+Most support interviews test the wrong thing. They reward people who talk well about technology, for a job that is mostly writing clearly to someone who is frustrated. AI hasn’t made that less important. As AI handles more of the simple tickets, the frustrated customers are increasingly the ones who reach a person.
 
-I was closely involved in hiring as a support manager at Deloitte and Teradata. But I really learned this at Automattic, during a six-month rotation on the hiring team. Working as a recruiter after years on the support operations side let me see hiring from both ends: the team that needs the hire, and the process that’s meant to find them.
+I was closely involved in hiring as a support manager at Deloitte and Teradata, on the side of the team that needed the hires. At Automattic, I saw the other side, spending six months on the hiring team as a recruiter. Having done both showed me what each side needs, and where the process usually falls short.
 
 Here’s what I’d tell anyone hiring support engineers: what to look for, how to run the interview, and the mistakes I see most often.
 
@@ -17,7 +17,7 @@ If you can’t name what a great hire looks like before the interview, you’ll 
 
 For support engineers, I look for five things:
 
-1. **Clear writing.** Most support happens in writing. The customer never hears your tone; they only read your words.
+1. **Clear writing.** Most support happens in writing, and the customer only reads your words. AI can draft a polite reply in seconds, so fluent writing alone isn’t the skill. The skill is knowing what a good reply looks like, and spotting when a draft, yours or the AI’s, misses the point.
 2. **Troubleshooting.** Not knowing every answer, but knowing how to narrow a problem down.
 3. **Empathy that leads to action.** Acknowledging the frustration in one honest line, then fixing the problem.
 4. **Ownership.** Following a problem through when the answer isn’t in the docs.
@@ -34,6 +34,8 @@ A support engineer’s main tool is the written reply, so make them write one. G
 Give them real time to do it well. A lot of companies now give candidates tasks they can finish over a weekend or across a whole week. That lets them work around their current job and at their own pace, the way they’d actually work on a remote team. What matters is a clear scope and a fair deadline, not how fast it’s done.
 
 These are practice tickets, not real customer work, so they’re usually unpaid. Paid work comes later, in the trial (practice 10).
+
+Expect candidates to use AI on a take-home task, and tell them upfront whether it’s allowed. If it is, test their judgment in a live follow-up: ask why they chose that tone, what they left out, and how they’d change the reply for a different customer. If it isn’t, add a short live writing exercise so you see their own writing.
 
 ### 2. Use real scenarios, not trivia
 
@@ -75,7 +77,7 @@ Reply on time, explain the process, and give the people you reject a clear answe
 
 ### 10. If you run a trial, make it fair
 
-Many companies now add a trial before a full-time offer: a paid project lasting a few days or weeks, or a short contract before a permanent role. At Automattic, the trial was a core part of hiring, and I led candidates through it. Done well, it’s the most reliable signal you’ll get, because you see real work on real problems instead of interview answers.
+Many companies now add a trial before a full-time offer: a paid project lasting a few days or weeks, or a short contract before a permanent role. I’ve led candidates through paid trials myself, and done well, it’s the most reliable signal you’ll get, because you see real work on real problems instead of interview answers.
 
 Done badly, it drives good people away. A few rules:
 
@@ -115,7 +117,7 @@ Score each trait from 1 to 4 and write down the evidence beside the score. A sco
 
 | Trait | What good looks like | A question to ask |
 | --- | --- | --- |
-| Clear writing | Short, plain, answers the real question, the next step is obvious | Written exercise: reply to three realistic tickets |
+| Clear writing | Short, plain, answers the real question, the next step is obvious | Written exercise on three realistic tickets, then a live follow-up on their choices |
 | Troubleshooting | Asks before fixing, narrows down step by step, checks the fix | “A customer’s site went down after a DNS change. Walk me through it.” |
 | Empathy that leads to action | Acknowledges once, then solves; no scripted apologies | “Rewrite this curt reply for a customer on their third contact.” |
 | Ownership | Follows through, escalates with full context, closes the loop | “Tell me about a problem you saw through when it wasn’t your job.” |
