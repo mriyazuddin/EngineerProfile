@@ -6,6 +6,7 @@ date: 2026-11-25
 description: "Patterns are ready-made groups of blocks. How to add them, save your own, and choose between synced and not synced."
 tryIt: "Add a couple of patterns to a draft page, then replace text and images with yours on one or both."
 question: "What section of your site gets repeated across pages?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7531197884680237056/"
 ---
 
 Why build a pricing table or call-to-action section from scratch when someone has already designed one? Patterns are ready-made groups of blocks.
