@@ -6,6 +6,7 @@ date: 2026-11-26
 description: "GROUP BY turns one total into a breakdown, like a pivot table. How it groups rows, and the one rule for the SELECT list."
 tryIt: "Write a query that counts orders for each status."
 question: "What breakdown do you build most often in a pivot table?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7531696542756401152/"
 ---
 
 COUNT tells you how many customers you have. But how many are there in each city? GROUP BY turns one total into a breakdown, and it's the most useful thing we've learned so far.
