@@ -27,11 +27,12 @@ const stats = [
   ["27% → 12%", "repeat calls, after improvement projects at Deloitte"],
   ["100+", "support documents created or updated at Automattic"],
 ];
+const strengthOrder = ["Servant leadership", "Operational excellence", "Training, coaching and performance", "Hands-on troubleshooting", "Clear writing", "Hiring"];
 const strengths = [
   ...leadershipAreas.map((a) => [a.title, a.text]),
   ["Hands-on troubleshooting", "WordPress, WooCommerce, HTML, CSS, DNS, hosting and payments, with SQL, WP-CLI and DevTools. I can still take the hard ticket myself."],
   ["Clear writing", "For customers and for documentation, so the next person doesn't have to open a ticket."],
-];
+].sort((x, y) => strengthOrder.indexOf(x[0]) - strengthOrder.indexOf(y[0]));
 const roles = experience.map((job) => [job.when, job.role, job.text]);
 const title = `${NAME} | Technical Support Leader`;
 const description = "Technical support leader in Hyderabad, India: a servant leader focused on operational excellence, with close to two decades in support. Led support teams at Deloitte and Teradata. Open to Support Engineer, Support Lead and Support Manager roles.";
