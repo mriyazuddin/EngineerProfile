@@ -6,6 +6,7 @@ date: 2026-11-26
 description: "A theme controls how your WordPress site looks, not your content. What changes when you switch themes, and what doesn't."
 tryIt: "Open Appearance, then Themes, and preview a different theme without activating it."
 question: "What would you want your site's design to say about you?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7531560486002257921/"
 ---
 
 "I installed a new theme and my content is still there." That's the point. Separating content from design is one of the most useful things about WordPress.
