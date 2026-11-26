@@ -22,10 +22,10 @@ const seriesCards = (["leadership", "wordpress", "sql"] as const).map((key) => {
 });
 
 const stats = [
+  ["500+", "tickets a month at 90%+ CSAT, as a Technical Support Engineer at Automattic"],
+  ["2–3 min", "saved per ticket with an AI ticket-summary tool I built at Automattic"],
   ["50%", "reduction in training duration at Teradata"],
-  ["17 → 13", "minutes average handle time, after improvement projects at Deloitte"],
   ["27% → 12%", "repeat calls, after improvement projects at Deloitte"],
-  ["100+", "support documents created or updated at Automattic"],
 ];
 const strengthOrder = ["Servant leadership", "Operational excellence", "Training, coaching and performance", "Hands-on troubleshooting", "Hiring"];
 const strengths = [
@@ -40,7 +40,7 @@ const quotes = [
 ];
 const roles = experience.map((job) => [job.when, job.role, job.text]);
 const title = `${NAME} | Technical Support Engineer & Lead | ex-Automattic`;
-const description = "Technical Support Engineer & Lead in Hyderabad, India, with close to two decades in support: almost 7 years of hands-on support engineering at Automattic and beyond, and a servant leader who led support teams at Deloitte, Teradata and ESW Capital. Open to Technical Support Lead and Support Engineer roles: remote, hybrid, on-site or relocation.";
+const description = "Technical Support Engineer & Lead in Hyderabad, India, with close to two decades in support: almost 7 years of hands-on support engineering at Automattic and beyond, and a servant leader who led support teams at Deloitte, Teradata and ESW Capital. Open to Technical Support Engineer and Support Lead roles: remote, hybrid, on-site or relocation.";
 const image = `${SITE_URL}/og/home.png`;
 ---
 <!doctype html>
@@ -71,7 +71,7 @@ const image = `${SITE_URL}/og/home.png`;
     <Nav home />
 
     <header id="top" class="wrap hero">
-      <p class="status"><span aria-hidden="true"></span>Open to Technical Support Engineer and Lead roles · Remote, hybrid, on-site or relocation</p>
+      <p class="status"><span aria-hidden="true"></span>Open to Technical Support Engineer and Support Lead roles · Remote, hybrid, on-site or relocation</p>
       <h1>A support engineer at heart, and a <span class="mark">servant leader by choice.</span></h1>
       <div class="hero-row">
         <p class="lead">I'm {NAME}, a technical support professional in {LOCATION}, with close to two decades in support. I spent almost 7 years in hands-on support engineering, most of it at Automattic, and before that I led support teams at Deloitte, Teradata and ESW Capital. I believe in servant leadership. A well-supported team gives customers great support, and supporting that team is my job. And I keep improving how the team works, one process at a time.</p>
@@ -155,7 +155,7 @@ const image = `${SITE_URL}/og/home.png`;
         <div class="doors">
           <div class="door door-main">
             <p class="eyebrow">Hiring for a role</p>
-            <h3>Technical Support Lead or Support Engineer</h3>
+            <h3>Technical Support Engineer or Support Lead</h3>
             <p>Email is the fastest way to reach me: <a class="mail" href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
             <div class="actions">
               <a class="btn btn-white" href={RESUME}>Download resume</a>

@@ -9,14 +9,14 @@ export const RESUME = "/resume.pdf";
 export const leadershipAreas = [
   { title: "Servant leadership", text: "I see my job as helping my team do its best work, so it can do its best work for customers." },
   { title: "Hiring", text: "Hired for 21 support roles in a six-month APAC recruitment rotation at Automattic, and led candidates through its trial process." },
-  { title: "Training, coaching and performance", text: "Cut training duration by 50% at Teradata. Coaching, mentoring and performance management, and trainings for support teammates at Deloitte, Teradata and Automattic. A clear quality bar, and help reaching it." },
-  { title: "Operational excellence", text: "Finding what slows a team down or brings customers back, and fixing it. Projects at Deloitte cut average handle time from 17 to 13 minutes and repeat calls from 27% to 12%." },
+  { title: "Training, coaching and performance", text: "Coaching, mentoring and performance management, and trainings for support teammates at Deloitte, Teradata and Automattic. A clear quality bar, and help reaching it." },
+  { title: "Operational excellence", text: "Finding what slows a team down or brings customers back, and fixing it, one process at a time." },
 ];
 
 export const experience = [
   { when: "Dec 2025 to present", role: "Technical Support Engineer, Freelance", text: "Build WordPress and WooCommerce sites. Resolve issues with themes, plugins, hosting, DNS, email and payment gateways." },
   { when: "May 2025 to Nov 2025", role: "Career break", text: "Planned time off after almost six years at Automattic." },
-  { when: "Jun 2019 to Apr 2025", role: "Happiness Engineer (Technical Support Engineer), Automattic", text: "Supported WordPress.com and WooCommerce customers by email and live chat, using SQL to troubleshoot: 500+ tickets a month at 90%+ CSAT. Analysed logs, reproduced bugs and filed bug reports in GitHub for developers. Created or updated over 100 support documents. Spent a six-month rotation on APAC recruitment, hiring for 21 support roles, led candidates through Automattic's trial process, and ran trainings for support teammates." },
+  { when: "Jun 2019 to Apr 2025", role: "Happiness Engineer (Technical Support Engineer), Automattic", text: "Supported WordPress.com and WooCommerce customers by email and live chat, using SQL to troubleshoot. Analysed logs, reproduced bugs and filed bug reports in GitHub for developers. Created or updated over 100 support documents. Spent a six-month rotation on APAC recruitment, hiring for 21 support roles, led candidates through Automattic's trial process, and ran trainings for support teammates." },
   { when: "Sep 2018 to Apr 2019", role: "IT Support, Freelance", text: "Provided on-site IT support to small businesses, resolving software, hardware, printer, operating system, network, MS Office/Office 365, email setup and data backup issues." },
   { when: "Apr 2018 to Aug 2018", role: "Customer Support Manager, ESW Capital (through Crossover)", text: "Managed 15 L1 and L2 support engineers. Led the transition of Symphony Commerce's support operations into ESW Capital's support organization after ESW Capital acquired the company." },
   { when: "Sep 2016 to Apr 2018", role: "Senior Manager, Technical Support, Teradata", text: "Led L1 and L2 support for Teradata products. Responsible for support operations, including hiring, coaching and performance management." },
@@ -25,7 +25,7 @@ export const experience = [
 
 export const sidebar = [
   { title: "Daily tools", text: "WordPress, WooCommerce, Zendesk, WP-CLI, Browser DevTools, DNS, HTML and CSS" },
-  { title: "Working knowledge", text: "SQL, GitHub, Jira, JavaScript (basic), PHP (basic)" },
+  { title: "Working knowledge", text: "SQL, GitHub, Jira, Postman, JavaScript (basic), PHP (basic)" },
   { title: "Languages", text: "English, Urdu, Hindi" },
   { title: "Education", text: "Bachelor of Computer Applications, Amjad Ali Khan College of Business Administration (affiliated to Osmania University)" },
 ];
