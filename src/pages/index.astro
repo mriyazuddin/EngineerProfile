@@ -30,7 +30,7 @@ const stats = [
 const strengthOrder = ["Servant leadership", "Operational excellence", "Training, coaching and performance", "Hands-on troubleshooting", "Hiring"];
 const strengths = [
   ...leadershipAreas.map((a) => [a.title, a.text]),
-  ["Hands-on troubleshooting", "WordPress, WooCommerce, HTML, CSS, DNS, hosting and payments, with SQL, WP-CLI and DevTools. Technical enough to resolve hard issues and coach a team through them."],
+  ["Hands-on troubleshooting", "WordPress, WooCommerce, HTML, CSS, DNS, hosting and payments, with SQL, WP-CLI, Postman and DevTools. Technical enough to resolve hard issues and coach a team through them."],
 ].sort((x, y) => strengthOrder.indexOf(x[0]) - strengthOrder.indexOf(y[0]));
 const quotes = [
   { text: "Riyaz is a rare combination of technical competence and genuine leadership.", name: "Sandeep Manoj Burri", role: "Reported directly to Riyaz" },
@@ -39,8 +39,8 @@ const quotes = [
   { text: "He always impressed me with his empathy, deep product knowledge, and willingness to help others.", name: "Maruti Mohanty", role: "Happiness Engineer, Automattic" },
 ];
 const roles = experience.map((job) => [job.when, job.role, job.text]);
-const title = `${NAME} | Technical Support Leader`;
-const description = "Technical support leader in Hyderabad, India: a servant leader focused on operational excellence, with close to two decades in support. Led support teams at Deloitte, Teradata and ESW Capital. Open to Technical Support Lead and Support Engineer roles: remote, hybrid, on-site or relocation.";
+const title = `${NAME} | Technical Support Lead and Support Engineer`;
+const description = "Technical support professional in Hyderabad, India, with close to two decades in support: almost 7 years of hands-on support engineering at Automattic and beyond, and a servant leader who led support teams at Deloitte, Teradata and ESW Capital. Open to Technical Support Lead and Support Engineer roles: remote, hybrid, on-site or relocation.";
 const image = `${SITE_URL}/og/home.png`;
 ---
 <!doctype html>
@@ -72,9 +72,9 @@ const image = `${SITE_URL}/og/home.png`;
 
     <header id="top" class="wrap hero">
       <p class="status"><span aria-hidden="true"></span>Open to Technical Support Lead and Support Engineer roles · Remote, hybrid, on-site or relocation</p>
-      <h1>A servant leader for support teams, focused on <span class="mark">operational excellence.</span></h1>
+      <h1>A support engineer at heart, and a <span class="mark">servant leader by choice.</span></h1>
       <div class="hero-row">
-        <p class="lead">I'm {NAME}, a technical support leader in {LOCATION}, with close to two decades in support. I believe in servant leadership. A well-supported team gives customers great support, and supporting that team is my job. And I keep improving how the team works, one process at a time. I led support teams at Deloitte, Teradata and ESW Capital, then spent almost 7 years in support engineering, most of it at Automattic.</p>
+        <p class="lead">I'm {NAME}, a technical support professional in {LOCATION}, with close to two decades in support. I spent almost 7 years in hands-on support engineering, most of it at Automattic, and before that I led support teams at Deloitte, Teradata and ESW Capital. I believe in servant leadership. A well-supported team gives customers great support, and supporting that team is my job. And I keep improving how the team works, one process at a time.</p>
         <div class="actions">
           <a class="btn btn-blue" href={RESUME}>Download resume</a>
           <a class="btn btn-line" href="#experience">See my experience</a>
