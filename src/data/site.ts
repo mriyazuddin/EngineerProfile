@@ -8,7 +8,6 @@ export const RESUME = "/resume.pdf";
 
 export const leadershipAreas = [
   { title: "Servant leadership", text: "I see my job as helping my team do its best work, so it can do its best work for customers." },
-  { title: "Leading through leads", text: "At Teradata, a manager reported to me with two team leads under them. At Deloitte, I managed a large team through assistant managers and team leads." },
   { title: "Hiring", text: "Hired for 21 support roles in a six-month APAC recruitment rotation at Automattic, and led candidates through its trial process." },
   { title: "Training, coaching and performance", text: "Cut training duration by 50% at Teradata. Coaching, mentoring and performance management, and trainings for support teammates at Deloitte, Teradata and Automattic. A clear quality bar, and help reaching it." },
   { title: "Operational excellence", text: "Finding what slows a team down or brings customers back, and fixing it. Projects at Deloitte cut average handle time from 17 to 13 minutes and repeat calls from 27% to 12%." },
