@@ -27,11 +27,12 @@ const stats = [
   ["50%", "reduction in training duration at Teradata"],
   ["27% → 12%", "repeat calls, after improvement projects at Deloitte"],
 ];
-const strengthOrder = ["Hands-on troubleshooting", "Operational excellence", "Training, coaching and performance", "Servant leadership", "Hiring"];
+const strengthOrder = ["Hands-on troubleshooting", "Tools and automation", "Operational excellence", "Training, coaching and performance", "Servant leadership"];
 const strengths = [
   ...leadershipAreas.map((a) => [a.title, a.text]),
+  ["Tools and automation", "An AI tool that summarizes ticket histories, a custom GPT for log analysis, standardized Zendesk macros, and a Zapier automation that tracked every Slack question for Highly Regulated Products. As a freelancer, a custom delivery-fee plugin and an AI chat assistant that hands complex questions to a person."],
   ["Hands-on troubleshooting", "WordPress, WooCommerce, HTML, CSS, DNS, hosting and payments, with SQL, WP-CLI, Postman and DevTools. Technical enough to resolve hard issues and coach a team through them."],
-].sort((x, y) => strengthOrder.indexOf(x[0]) - strengthOrder.indexOf(y[0]));
+].filter((x) => strengthOrder.includes(x[0])).sort((x, y) => strengthOrder.indexOf(x[0]) - strengthOrder.indexOf(y[0]));
 const quotes = [
   { text: "Riyaz is a rare combination of technical competence and genuine leadership.", name: "Sandeep Manoj Burri", role: "Reported directly to Riyaz" },
   { text: "…consistently demonstrated strong technical troubleshooting skills and a professional, solution-focused approach.", name: "Solehudin Jalaludin", role: "Happiness Engineer, Automattic" },
