@@ -19,8 +19,8 @@
   ],
   "redirects": [
     {
-      "source": "/preview",
-      "destination": "/",
+      "source": "/:path((?!maintenance|favicon\\.svg).*)",
+      "destination": "/maintenance",
       "permanent": false
     }
   ]
