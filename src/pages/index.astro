@@ -34,7 +34,7 @@ const strengths = [
 ].sort((x, y) => strengthOrder.indexOf(x[0]) - strengthOrder.indexOf(y[0]));
 const roles = experience.map((job) => [job.when, job.role, job.text]);
 const title = `${NAME} | Technical Support Leader`;
-const description = "Technical support leader in Hyderabad, India: a servant leader focused on operational excellence, with close to two decades in support. Led support teams at Deloitte, Teradata and ESW Capital. Open to Support Engineer, Support Lead and Support Manager roles.";
+const description = "Technical support leader in Hyderabad, India: a servant leader focused on operational excellence, with close to two decades in support. Led support teams at Deloitte, Teradata and ESW Capital. Open to Technical Support Lead and Support Engineer roles: remote, hybrid, on-site or relocation.";
 const image = `${SITE_URL}/og/home.png`;
 const services = [
   ["New sites and stores", "WordPress or WooCommerce set up end to end: theme, products, payments, shipping and tax."],
@@ -72,7 +72,7 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
     <Nav home />
 
     <header id="top" class="wrap hero">
-      <p class="status"><span aria-hidden="true"></span>Open to Support Engineer, Support Lead and Support Manager roles</p>
+      <p class="status"><span aria-hidden="true"></span>Open to Technical Support Lead and Support Engineer roles · Remote, hybrid, on-site or relocation</p>
       <h1>A servant leader for support teams, focused on <span class="mark">operational excellence.</span></h1>
       <div class="hero-row">
         <p class="lead">I'm {NAME}, a technical support leader in {LOCATION}, with close to two decades in support. I believe in servant leadership. A well-supported team gives customers great support, and supporting that team is my job. And I keep improving how the team works, one process at a time. I led support teams at Deloitte, Teradata and ESW Capital, then spent almost 7 years in support engineering, most of it at Automattic.</p>
@@ -159,7 +159,7 @@ const projectMail = `mailto:${EMAIL}?subject=${encodeURIComponent("Project enqui
         <div class="doors">
           <div class="door door-main">
             <p class="eyebrow">Hiring for a role</p>
-            <h3>Support Engineer, Lead or Manager</h3>
+            <h3>Technical Support Lead or Support Engineer</h3>
             <p>Email is the fastest way to reach me: <a class="mail" href={`mailto:${EMAIL}`}>{EMAIL}</a></p>
             <div class="actions">
               <a class="btn btn-white" href={RESUME}>Download resume</a>
