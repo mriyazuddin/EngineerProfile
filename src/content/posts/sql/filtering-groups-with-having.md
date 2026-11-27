@@ -6,6 +6,7 @@ date: 2026-11-27
 description: "HAVING filters groups after they're counted, which WHERE can't do. Plus clause order and a quick way to find duplicates."
 tryIt: "Write a query that lists customers with more than 5 orders, using customer_id from the orders table."
 question: "Would that duplicate check find anything in your data?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7532058703575851009/"
 ---
 
 Which cities have more than 100 customers? You can't answer that with WHERE, because the count doesn't exist until the rows are grouped. That's the job of HAVING.
