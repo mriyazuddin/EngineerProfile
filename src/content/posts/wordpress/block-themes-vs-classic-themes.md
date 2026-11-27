@@ -6,6 +6,7 @@ date: 2026-11-27
 description: "Block themes edit the whole site with blocks, classic themes rely on code and the Customizer. How to tell which one you have."
 tryIt: "Open Appearance on your site and work out which type of theme you have."
 question: "Which type of theme is your site using?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7531922860899209216/"
 ---
 
 Two sites can both run WordPress and be customised in entirely different ways. The reason is usually which type of theme they use.
