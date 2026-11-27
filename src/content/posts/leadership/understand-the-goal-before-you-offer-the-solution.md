@@ -2,6 +2,7 @@
 title: "Understand the Goal Before You Offer the Solution"
 series: leadership
 date: 2026-11-27
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7532019383444082688/"
 description: "A simple support question met by bots and agents who followed the script instead of listening, and what I'd change as a support leader."
 ---
 
