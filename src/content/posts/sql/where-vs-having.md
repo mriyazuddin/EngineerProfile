@@ -6,6 +6,7 @@ date: 2026-11-28
 description: "WHERE filters rows before grouping, HAVING filters groups after. A simple rule for choosing between them, with an example."
 tryIt: "Say which clause fits each one: \"orders in 2026\" and \"customers with over 10 orders\"."
 question: "Did you get them right? Tell me below."
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7532421119543316480/"
 ---
 
 WHERE and HAVING both filter, and that's why people mix them up. The difference comes down to one question: are you filtering rows or groups?
