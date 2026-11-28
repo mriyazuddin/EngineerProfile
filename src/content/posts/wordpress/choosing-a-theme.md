@@ -6,6 +6,7 @@ date: 2026-11-28
 description: "Five checks before you commit to a WordPress theme: updates, speed, mobile, support and fit with your site plan."
 tryIt: "Shortlist two themes and score each one against all five points."
 question: "What's the deciding factor for you when you pick a theme?"
+linkedinUrl: "https://www.linkedin.com/feed/update/urn:li:share:7532285155667828736/"
 ---
 
 There are thousands of WordPress themes to choose from, and a good-looking demo tells you very little. Use this checklist before you commit.
